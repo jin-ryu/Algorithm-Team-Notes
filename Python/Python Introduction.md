@@ -1,4 +1,4 @@
-## Python Introduction
+# Python Introduction
 
 ### ■ String
 
@@ -57,7 +57,7 @@
   - `dict.items()` : key, value 값들을 dict_items 객체의 형태로 반환 (리스트로 반환X)
     * 자주 사용하는 방식: `for key, value in dict.items():`
 - **List vs. Dictionary**
-  ![리스트와 딕셔너리 비교](C:\Users\ann\Desktop\리스트와 딕셔너리 비교.png)
+  ![리스트와 딕셔너리 비교](https://user-images.githubusercontent.com/45402031/88435926-2f97e780-ce3e-11ea-8e1d-8d6ce975b1e0.png)
 
 
 
