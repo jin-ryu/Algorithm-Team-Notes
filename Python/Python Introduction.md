@@ -1,5 +1,9 @@
 # Python Introduction
 
+###### 💁 유찌니의 파이썬 노트
+
+
+
 ### ■ String
 
 - **Methods**
@@ -10,11 +14,8 @@
   - `end` : print() 함수에서 출력의 끝을 지정
     - `print('Python Introduction' , end='')`
 
-- **Slice**
+  
 
-  - List와 동일하게 사용가능 (List의 Slice 부분 참고)
-
-    
 
 ### ■ List
 
@@ -40,7 +41,8 @@
   - `list1 = str.split(' ')` : 문자열에서 리스트로 (' ' 단위로 분할)
   - `" ".join(list)` : 리스트에서 문자열로 (" "단위로 이어붙임)
 - **Slice**
-  - slice를 하면 해당하는 부분의 리스트나 문자열을 새로 만들어준다.
+  - slice를 하면 해당하는 부분의 리스트나 문자열을 새로 만들어준다
+  - String에서도 slice를 사용할 수 있다
   - `list1[start:end]` : 리스트의 start부터 end-1까지를 반환
   - `list1[start : end : step]` :  slice한 값의 범위에서 step 값을 주어 그 값만큼 건너뛰어 가져오는 기능
   - `del list1[ : end]` :  처음부터 end-1번째까지 삭제
@@ -112,6 +114,28 @@
 
 
 
+### ■ Logical Operation
+
+- true, false
+
+  - 숫자 0 / 빈 딕셔너리 / 빈 리스트 / 빈 문자열 = false
+  - 아무 값도 없다는 의미인 None = false
+  - 그 외의 모든 숫자 / 딕셔너리 / 리스트 / 문자열 = true
+
+- `or`
+
+  - 앞의 값이 true이면 앖의 값을, 앞의 값이 false 이면 뒤에 값을 따름
+
+  ```python
+  a = 1 or 10 
+  b = 0 or 10
+  
+  # a:1, b:10
+  print("a:{}, b:{}".format(a,b))	
+  ```
+
+  
+
 ### ■ Exception Handling
 
 - **try  except**
@@ -146,18 +170,11 @@
 
 
 
-### ■ Logical Operation
-
-- true, false
-  - 숫자 0 / 빈 딕셔너리 / 빈 리스트 / 빈 문자열 = false
-  - 아무 값도 없다는 의미인 None = false
-  - 그 외의 모든 숫자 / 딕셔너리 / 리스트 / 문자열 = true
 
 
 
 
 
----
 
 *__reference link :__*
 
