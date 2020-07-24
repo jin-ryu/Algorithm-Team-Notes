@@ -1,4 +1,4 @@
-## Python Introduction
+# Python Introduction
 
 ### ■ String
 
@@ -27,7 +27,7 @@
     (여러개의 값이 있는 경우 가장 앞에 있는 하나만 지워짐)
   - `list1.count(value)` : 해당 값을 개수를 셈 
   - `list1.sort()` : 값을 순서대로 정렬 (list1의 원래값이 변함)
-  - `list1.reverse()` : 값을 역순으로 정력 (list1의 원래값이 변함)
+  - `list1.reverse()` : 값을 역순으로 정렬 (list1의 원래값이 변함)
   - `list2 = sorted(list1)` : 값을 순서대로 정렬 (list1의 원래값이 변하지 않음)
   - `if value in list1` : 리스트 안에 값이 들어있는지 확인 
   - `if valie not in list1` : 리스트 안에 값이 들어있지 않은 지 확인 
@@ -57,7 +57,7 @@
   - `dict.items()` : key, value 값들을 dict_items 객체의 형태로 반환 (리스트로 반환X)
     * 자주 사용하는 방식: `for key, value in dict.items():`
 - **List vs. Dictionary**
-  ![리스트와 딕셔너리 비교](C:\Users\ann\Desktop\리스트와 딕셔너리 비교.png)
+  ![리스트와 딕셔너리 비교](https://user-images.githubusercontent.com/45402031/88435926-2f97e780-ce3e-11ea-8e1d-8d6ce975b1e0.png)
 
 
 
