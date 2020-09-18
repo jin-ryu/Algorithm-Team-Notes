@@ -877,76 +877,125 @@
       return quick_sort(left) + [pivot] + quick_sort(right)
   ```
 
+
+
+
+#### 이진 탐색(Binary Search)
+
+- 탐색할 자료를 둘로 나누어 해당 데이터가 있을만한 곳을 탐색하는 방법
+
+- 이진 탐색은 **데이터가 정렬되어 있는 상태**에서 진행
+
+- 분할 정복 알고리즘과 이진 탐색
+
+  - 분할 정복 알고리즘(Divide and Conquer)
+    - Divide: 문제를 하나 또는 둘 이상으로 나눈다.
+    - Conquer: 나눠진 문제가 충분히 작고, 해결이 가능하다면 해결하고, 그렇지 않다면 다시 나눈다.
+  - 이진 탐색
+    - Divide: 리스트를 두 개의 서브 리스트로 나눈다.
+    - Conquer
+      - 검색할 숫자(search) == 중간값 이면, 탐색을 종료한다.
+      - 검색할 숫자(search) > 중간값 이면, 뒷 부분의 서브 리스트에서 검색할 숫자를 찾는다.
+      - 검색할 숫자(search) < 중간값 이면, 앞 부분의 서브 리스트에서 검색할 숫자를 찾는다.
+
+- 구현: **O(logn)**
+
+  ```python
+  def binary_search(data, search):
+      # 예외 처리
+      if len(data) == 0:
+          return False
+      if len(data) == 1:
+          if data[0] == search:
+              return True
+          else:
+              return False
+          
+      # 메인 로직
+      mid = len(data)//2
+      if search > data[mid]:
+          return binary_search(data[mid:], search)
+      elif search < data[mid]:
+        	return binary_search(data[:mid], search)
+      else:
+          return True
+  ```
+
   
 
 #### 깊이/너비 우선탐색(DFS/BFS)
 
-- BFS(Breadth First Search, 너비 우선 탐색)
+- 파이썬으로 그래프를 표현하는 방법
 
-  - 큐(queue) 
+  - 딕셔너리와 리스트를 활용하여 표현
 
-    - 노드를 방문하면서 인접한 노드 중 방문하지 않았던 노드의 정보를 큐에 삽입	.
-
-      - `set`을 사용하여 구현
-
-      ```python
-      graph_list = {1: set([3, 4]),
-                    2: set([3, 4, 5]),
-                    3: set([1, 5]),
-                    4: set([1]),
-                    5: set([2, 6]),
-                    6: set([3, 5])}
-      root_node = 1
-      ```
-
-    - 큐에 먼저 들어있던 노드부터 순차적으로 방문
-
-    - 삽입 : `list.append(something)`
-
-    - 삭제 : `list.pop(0)`(시간적으로 비효율적) / `collections.deque()`
-
-  - 구현 방법
+    - 노드: 딕셔너리 key
+    - 간선: 딕셔너리 value (연결된 노드들의 리스트)
 
     ```python
-    from collections import deque
+    graph = dict()
     
-    def BFS_with_adj_list(graph, root):
-        visited = []
-        queue = deque([root])
-    
-        while queue:
-            n = queue.popleft()
-            if n not in visited:
-                visited.append(n)
-                queue += graph[n] - set(visited)
-        return visited
-      
-    print(BFS_with_adj_list(graph_list, root_node))
+    graph['A'] = ['B', 'C']
+    graph['B'] = ['A', 'D']
+    graph['C'] = ['A', 'G', 'H', 'I']
+    graph['D'] = ['B', 'E', 'F']
+    graph['E'] = ['D']
+    graph['F'] = ['D']
+    graph['G'] = ['C']
+    graph['H'] = ['C']
+    graph['I'] = ['C', 'J']
+    graph['J'] = ['I']
     ```
+
+- BFS(Breadth First Search, 너비 우선 탐색)
+
+  - 정점들과 같은 레벨에 있는 노드들 (형제 노드들)을 먼저 탐색하는 방식
+
+  - need_visit **큐**와 visited **큐**를 활용
+
+  - 구현:  O(V+E) <small> V는 노드 수, E는 간선 수</small>
+
+    ```python
+    from collections import deque 
+    
+    def bfs(graph, start_node):
+        visited = deque([])
+        need_visit = deque([])
+        need_visit.append(start_node)	# 시작 노드 삽입
+        
+        while need_visit:
+            node = need_visit.popleft()	# 리스트의 시작 원소를 방문(큐의 rear)
+            if node not in visited:
+                visited.append(node)
+                need_visit.extend(graph[node])
+        
+        return list(visited)	# 노드 방문 순서
+    ```
+
+    - 큐를 구현할 때 `collections.deque`나 `queue` 모듈을 사용해도 됨
 
 - DFS(Depth First Search, 깊이 우선 탐색)
 
-  - 스택(stack)
+  - 정점의 자식들을 먼저 탐색하는 방식
 
-    - 먼저 방문한 노드에 연결된 노드보다, 현재 방문한 노드에 연결된 노드를 연결해야 한 방향으로 갈 수 있기 때문에 DFS에서는 스택이 유리
-    - 삽입 : `list.append(something)`
-    - 삭제 : `list.pop(0)`
+  - need_visit **스택**과 visited **큐** 이용
 
-  - 구현 방법
+  - 구현: O(V+E) <small> V는 노드 수, E는 간선 수</small>
 
     ```python
-    def DFS_with_adj_list(graph, root):
-        visited = []
-        stack = [root]
-    
-        while stack:
-            n = stack.pop()
-            if n not in visited:
-                visited.append(n)
-                stack += graph[n] - set(visited)
-        return visited
-    
-    print(BFS_with_adj_list(graph_list, root_node))
+    def dfs(graph, start_node):
+        visited, need_visit = list(), list()	# 큐, 스택
+        need_visit.append(start_node)	# 시작 노드 삽입
+        
+        while need_visit:
+            node = need_visit.pop()	# 리스트의 끝 원소를 방문(스택 top)
+            if node not in visited:
+                visited.append(node)
+                need_visit.extend(graph[node])	# 다음 레벨에 있는 노드들을 need_visit에 추가
+                
+        return visited	# 노드 방문 순서
     ```
 
-    
+    - 큐를 구현할 때 `collections.deque`나 `queue` 모듈을 사용해도 됨
+
+  

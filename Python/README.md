@@ -105,6 +105,7 @@
   - Return the sum of a 'start' value (default: 0) plus an iterable of numbers
   - `sum([1,2,3])` : 1+2+3을 계산해 6을 리턴
   - `sum([[1,2], [3,4], [5,6]], [])` : [1,2] + [3,4] +[5,6]을 계산해 [1,2,3,4,5,6,]을 리턴
+  - **제일 느림 사용하지 말 것**
 - `itertools.chain.from_iterable(iterable)`
   - 하나의 iterable만 전달해도 iterator의 요소들을 조회하면서 값을 넘겨줌
 - `itertools.chain(*iterables)`
@@ -128,6 +129,7 @@
   - `import numpy`
   - `flatten()` : 다차원 배열을 1차원으로 바꿔줌
     - 비슷한 함수 : `ravel()`, `reshape()`
+    - **제일 빠름**
 
 ##### 13.combperm.py     순열과 조합
 
