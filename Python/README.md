@@ -1,6 +1,6 @@
 # Python Introduction
 
-###### 💁 유찌니의 파이썬 노트
+💁 유찌니의 파이썬 노트
 
 - [Number (숫자 자료형)](#number)
 - [List (리스트)](#list)
@@ -15,7 +15,7 @@
 - [Conditional (조건문)](#conditional)
 - [Libraries (표준 라이브러리)](#libraries)
 
-
+[TOC]
 
 ##  Number 
 
