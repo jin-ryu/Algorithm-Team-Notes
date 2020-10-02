@@ -4,20 +4,20 @@
 
 - [Number (숫자 자료형)](#number)
 - [List (리스트)](#list)
-- [String (문자열)](#■-string)
-- [Tuple (튜플)](#■-tuple)
-- [Dictionary (사전)](#■ Dictionary)
-- [Set (집합)](#■ Set)
-- [Input and Output (입출력)](#■ Input and Output)
-- [Function (함수)](#■ Function)
-  - [Lambda](#■ Lambda)
-  - [Zip](#■ Zip)
-- [Conditional (조건문)](#■ Conditional)
-- [Libraries (표준 라이브러리)](# ■ Libraries)
+- [String (문자열)](#string)
+- [Tuple (튜플)](#tuple)
+- [Dictionary (사전)](#dictionary)
+- [Set (집합)](#set)
+- [Input and Output (입출력)](#input-and-output)
+- [Function (함수)](#function)
+  - [Lambda](#lambda)
+  - [Zip](#zip)
+- [Conditional (조건문)](#conditional)
+- [Libraries (표준 라이브러리)](#libraries)
 
 
 
-### Number 
+##  Number 
 
 - **지수 표현 방식**
   
@@ -52,7 +52,7 @@
 
 
 
-### List
+##  List
 
 - **List Comprehension**
 
@@ -144,9 +144,9 @@
   - `del list1[ : end]` :  처음부터 end-1번째까지 삭제
   - `list1[1:3] = [77,88]` (더 많은/적은 개수로 변환도 가능)
 
+  
 
-
-### ■ String
+## String
 
 - **문자열 안에 큰따옴표나 작은따옴표가 포함되어야 하는 경우**
 
@@ -173,7 +173,7 @@
 
   
 
-### ■ Tuple
+## Tuple
 
 - 한번 선언된 값을 **변경, 삭제가 불가능**
 
@@ -232,7 +232,7 @@
 
 
 
-### ■ Dictionary
+## Dictionary
 
 - 키(Key)와 값(Value)의 쌍을 데이터로 가지는 자료형
   
@@ -290,7 +290,7 @@
   
   
 
-### ■ Set
+## Set
 
 - **중복을 허용하지 않고, 순서가 없음**
 - **초기화** : set([1,2,3]) or set('123') or ({1,2,3})
@@ -303,7 +303,7 @@
 
 
 
-### ■ Input and Output
+## Input and Output
 
 - **표준 입력 방법**
 
@@ -347,7 +347,7 @@
 
 
 
-### ■ Function
+## Function
 
 - **파라미터 지정하기** 
 
@@ -392,7 +392,7 @@
 
 
 
-### ■ Lambda
+### Lambda
 
 - 특정한 기능을 수행하는 함수를 한 줄에 작성할 수 있다는 점이 특징
 - `lambda (매개변수) : (반환값)`
@@ -436,7 +436,7 @@
 
 
 
-#### ■ Zip
+#### Zip
 
 - `zip(*iterable)` :  iterables의 요소들을 같은 index끼리 새로운 tuple로 만들어줌
 
@@ -487,7 +487,7 @@
 
 
 
-### ■ Conditional
+## Conditional
 
 - **Methods**
 
@@ -525,7 +525,7 @@
 
 
 
-### ■ Libraries
+## Libraries
 
 - **내장 함수**: 기본 입출력 함수부터 정렬 함수까지 기본적인 함수들을 제공
 
