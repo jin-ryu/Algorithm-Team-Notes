@@ -3,7 +3,7 @@
 ###### 💁 유찌니의 파이썬 노트
 
 - [Number (숫자 자료형)](#number)
-- [List (리스트)](#■-list)
+- [List (리스트)](#list)
 - [String (문자열)](#■-string)
 - [Tuple (튜플)](#■-tuple)
 - [Dictionary (사전)](#■ Dictionary)
@@ -17,7 +17,7 @@
 
 
 
-### ■ Number 
+### Number 
 
 - **지수 표현 방식**
   
@@ -52,7 +52,7 @@
 
 
 
-### ■ List
+### List
 
 - **List Comprehension**
 
