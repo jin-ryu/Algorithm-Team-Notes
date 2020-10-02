@@ -999,3 +999,148 @@
     - 큐를 구현할 때 `collections.deque`나 `queue` 모듈을 사용해도 됨
 
   
+
+#### union find (disjoint-set)
+
+- 서로 중복되지 않는 부분 집합들로 나눠진 원소들에 대한 정보를 저장하고 조작하는 자료구조
+
+- 다수의 노드들 중에 연결된 노드를 찾거나 노드들을 합칠때 사용하는 알고리즘
+
+- 연결정보를 **작은 값을 기준으로 갱신**
+
+  | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   |
+  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+  | 1    | 1    | 2    | 3    | 5    | 5    | 6    | 7    | 9    | 9    |
+
+  | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   |
+  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+  | 1    | 1    | 1    | 1    | 5    | 5    | 5    | 5    | 9    | 9    |
+
+- union find (disjoint-set)의 핵심 3가지
+
+  - **초기화**: N개의 원소가 각각의 집합에 포합되어 있도록 초기화
+  - **Union 연산**: 두 원소 a, b가 주어질 때, 이들이 속한 두 집합을 하나로 합침
+  - **Find 연산**: 어떤 원소 a가 주어질 때, 이 원소가 속한 집합을 반환
+
+- 구현
+
+  - 배열을 사용하는 방식 : O(N) <small>효율성 Bad</small>
+
+    1. 원소의 크기만큼 배열을  초기화(생성)해줍니다.
+    2. 두 원소를 합치기 위해 배열의 모든 원소를 순회하면 서 하나의 번호를 나머지 하나로 교체합니다. 
+
+    ```python
+    class DisjointSet:
+        def __init__(self, n):
+            self.data = list(range(n))
+            self.size = n
+        
+        def find(self, index):
+            return self.data[index]
+        
+        def union(self, x, y):  # x,y: 노드 번호
+            x, y = self.find(x), self.find(y)
+            
+            if x == y:	# 같은 그래프인 경우(연결된 경우)
+                return
+            
+            for i in range(self.size):  # data를 모두 순회하면서 같은 값으로 바꿔줌 (연결되어 있으므로)
+                if self.find(i) == y:
+                    self.data[i] = x
+                    
+        @property
+        def length(self):
+            return len(set(self.data))
+                    
+    disjoint = DisjointSet(10)
+    disjoint.union(0, 1)
+    ```
+
+  - 트리구조를 사용하는 방식 : O(logn) <small>효율성 Good</small>
+
+    - union-by-size 
+
+      - 원소의 수가 적은 집합을 원소가 많은 집합의 하위트리로 합침
+
+      - 사용 방식
+
+      1. 주어진 원소의 개수만큼 사용하지 않을 값(예제에서는 -1)을 생성
+
+      2. 루트노드의 인덱스를 찾음
+      3. 루트노드의 인덱스가 다르다면 리스트의 값이 더 낮은(size가 더 큰) 것을 찾아서 큰 것에 더해줌
+      4. 작은건 큰 것의 인덱스로 바꿔줌
+
+      ```python
+      class DisjointSet:
+          def __init__(self, n):
+              self.data = [-1 for _ in range(n)]
+              self.size = n
+          
+          def find(self, index):	# 루트 노드의 인덱스를 찾음
+              value = self.data[index]
+             	if value < 0:	# 더 이상 위로 연결되어 있는게 없음 (루트 노드)
+                  return index	
+              
+              return self.find(value)	# 루트 노드로 이동
+          
+          def union(self, x, y):
+              x = self.find(x)
+              y = self.find(y)
+              
+              if x == y:	# 같은 그래프인 경우
+                  return
+              
+              # 더 작은 인덱스 쪽을 붙임
+              if self.data[x] < self.data[y]:
+                  self.data[x] += self.data[y]
+                  self.data[y] = x
+              else:
+                  self.data[y] += self.data[x]
+                  self.data[x] = y
+                  
+              self.size -= 1
+      ```
+
+    - union-by-height
+
+       - 트리의 높이가 작은 집합을 높이가 더 큰 집합의 서브트리로 합치는 방식
+
+       ```python
+       class DisjointSet:
+           def __init__(self, n):
+               self.data = [-1 for _ in range(n)]
+               self.size = n
+           
+           def find(self, index):	
+               value = self.data[index]
+              	if value < 0:
+                   return index
+               
+               return self.find(value)
+           
+           def union(self, x, y):
+               x = self.find(x)
+               y = self.find(y)
+               
+               if x == y:	# 같은 그래프인 경우
+                   return
+               
+               # 더 작은 높이쪽을 붙임
+               if self.data[x] < self.data[y]:
+                   self.data[x] += self.data[y]
+                   self.data[y] = x
+               else:
+                   self.data[y] += self.data[x]
+                   self.data[x] = y
+                   
+               self.size -= 1
+       ```
+
+    - path comprehension
+
+       - find() 연산을 수행할 때 트리의 높이만큼 올라가 루트를 찾는 비 효율성을 해결하고 자 나온 개념
+       - find()를 실행한 뒤에 다음 find()에서 효과적으로 찾을 수 있도록 트리를 재구성
+       - 수행  과정
+          1. find(x)를 실행
+          2. x가 루트가 아니라면 임시로 저장
+          3. 루트노드를 찾으면 x를 루트노드의 자식으로 표시
