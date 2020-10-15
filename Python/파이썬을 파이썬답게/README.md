@@ -37,7 +37,7 @@
 - `string.ascii_lowercase` : 알파벳 소문자 리스트
 - `string.ascii_uppercase` : 알파벳 대문자 리스트
 - `string.ascii_letters` : 알파벳 대소문자 리스트
-- `string.ascii_digits` : 숫자 0~9 리스트
+- `string.digits` : 숫자 0~9 리스트
 
 ##### 05.sorted.py     원본을 유지한채, 정렬된 리스트 구하기
 

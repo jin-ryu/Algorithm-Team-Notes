@@ -520,6 +520,7 @@
     ```
 
 - **파이썬 조건문 내에서의 부등식**
+  
   - 조건문 내에서 수학의 부등식을 그대로 사용할 수 있음 <small>ex) `x> 0 and x<20` -> `0<x<20`</small>
 
 
@@ -587,6 +588,31 @@
 - `heapq`: 힙(Heap) 자료구조를 제공
 
   - 일반적으로 우선순위 큐 기능을 구현하기 위해 사용
+
+    - 우선순위 큐:  Insert, DeleteMin(or DeleteMax) 연산을 지원하는 추상적은 개념의 자료구조
+      - DeleteMin: head에서 tail까지 탐색하면서 최소인 값을 찾고 제거
+      - Insert: head 앞에 새로운 노드 추가
+
+  - 보통의 리스트를 마치 최소 힙처럼 다룰 수 있게 해줌 (PriorityQueue 처럼 별개의 자료구조가 아님)
+
+    - `heapq.heappush(heap, value)` : heap에 원소 추가
+    - `heapq.heappop(heap)` : heap에서 원소 삭제
+    - `heapq.heapify(heap)` : 기존 리스트를 힙으로 변환
+
+  - 최대 힙
+
+    ```python
+    import heapq
+    
+    nums = [4, 1, 7, 3, 8, 5]
+    heap = []
+    
+    for num in nums:
+      heapq.heappush(heap, (-num, num))  # (우선 순위, 값)
+    
+    while heap:
+      print(heapq.heappop(heap)[1])  # index 1
+    ```
 
 - `bisect` : 이진 탐색(Binary Search) 기능을 제공
 
