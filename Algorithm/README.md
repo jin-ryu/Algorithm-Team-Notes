@@ -298,8 +298,8 @@
   1. 탐색 시작 노드를 스택에 삽입하고 방문 처리를 합니다.
   2. 스택의 최상단 노드에 방문하지 않은 인접한 노드가 하나라도 있으면 그 노드를 스택에 넣고 방문 처리합니다. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼냅니다.
   3. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복합니다.
-
-![image-20201015001153248](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015001153248.png)
+  
+![image-20201015001153248](https://user-images.githubusercontent.com/45402031/96075853-ee681e80-0ee6-11eb-9602-3bf16cfbe937.png)
 
 - **DFS 소스코드 예제 (Python)**
 
@@ -375,7 +375,7 @@
 
 - 특정 조건에서의 **최단경로 문제**를 해결하기 위해 효과적으로 사용될 수 있음
 
-![image-20201015002844846](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015002844846.png)
+![image-20201015002844846](https://user-images.githubusercontent.com/45402031/96076011-561e6980-0ee7-11eb-8aa1-5041f309a272.png)
 
 - **BFS 소스코드 예제 (Python)**
 
