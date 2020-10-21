@@ -129,6 +129,10 @@
 
   - `list(set(value))` : 중복되는 value를 제거
 
+  - `ch.isupper()`: 문자가 대문자인지 확인
+
+  - `ch.islower()`: 문자가 소문자인지 확인
+
 - **List and String**
 
   - 서로 변환이 가능하다
@@ -170,6 +174,9 @@
   - `str1.startswith(str2)` : str2가 str1의 맨 앞에 있는지 여부를 True, False로 반환
   - `str1.endsswith(str2)` : str2가 str1의 맨 앞에 있는지 여부를 True, False로 반환
   - `ord(ch)`: 문자의 ASCII 코드를 리턴
+  - `chr(num)`: ASCII 코드를 문자로 리턴
+  - `s.isalpha()`: 문자열이 문자인지 아닌지 리턴
+  - `s.isdigit()`: 문자열이 숫자인지 아닌지 리턴
 
   
 
