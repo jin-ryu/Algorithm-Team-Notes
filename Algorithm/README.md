@@ -8,7 +8,7 @@
   - [스택 자료구조](#스택-자료구조)
   - [큐 자료구조](#큐-자료구조)
   - [재귀 함수](#재귀-함수)
-  - [DFS (Depth First Search)](#DFS- (Depth-First-Search))
+  - [DFS (Depth First Search)](#DFS-(Depth-First-Search))
   - [BFS (Breadth First Search)](#BFS-(Breadth-First-Search))
 - [정렬 알고리즘](#정렬-알고리즘)
   - [선택 정렬](#t선택-정렬)
