@@ -33,7 +33,7 @@ D: 아래로 한 칸 이동
 
 이때 여행가 A가 N x N 크기의 정사각형 공간을 벗어나는 움직임은 무시됩니다. 예를 들어 (1, 1)의 위치에서 L 혹은 U를 만나면 무시됩니다. 다음은 N = 5인 지도와 계획서입니다.
 
-![image-20201003185153644](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201003185153644.png)
+![image-20201003185153644](https://user-images.githubusercontent.com/45402031/96827751-3819b180-1471-11eb-8803-ef545833dff4.png)
 
 **입력 조건**
 
@@ -97,17 +97,17 @@ D: 아래로 한 칸 이동
 1. 수평으로 두 칸 이동한 뒤에 수직으로 한 칸 이동하기
 2. 수직으로 두 칸 이동한 뒤에 수평으로 한 칸 이동하기
 
-![image-20201003191248480](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201003191248480.png)
+![image-20201003190355793](https://user-images.githubusercontent.com/45402031/96827799-5384bc80-1471-11eb-9e76-87e99a6a61ad.png)
 
 이처럼 8 x 8 좌표 평면상에서 나이트의 위치가 주어졌을 때 나이트가 이동할 수 있는 경우의 수를 출력하는 프로그램을 작성하세요. 왕실의 정원에서 행 위치를 표현할 때는 1부터 8로 표현하며,  열 위치를 표현할 때는 a부터 h로 표현합니다.
 
 - **c2**에 있을 때 이동할 수 있는 경우의 수는 6가지입니다.
 
-![image-20201003191458803](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201003191458803.png)
+![image-20201003191248480](https://user-images.githubusercontent.com/45402031/96827891-83cc5b00-1471-11eb-827f-feece52a8fa6.png)
 
 - **a1**에 있을 때 이동할 수 있는 경우의 수는 **2가지**입니다.
 
-![image-20201003191645801](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201003191645801.png)
+![image-20201003191645801](https://user-images.githubusercontent.com/45402031/96827920-934ba400-1471-11eb-9627-4de812422121.png)
 
 **입력 조건**
 
