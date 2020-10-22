@@ -19,7 +19,7 @@
 
 N x M 크기의 얼음 틀이 있습니다. 구멍이 뚫려 있는 부분은 0, 칸막이가 존재하는 부분은 1로 표시됩니다. 구멍이 뚫려 있는 부분끼리 상, 하, 좌, 우로 붙어 있는 경우 서로 연결되어 있는 것으로 간주합니다. 이때 <u>얼음 틀의 모양이 주어졌을 때 생성되는 총 아이스크림의 개수를 구하는 프로그램을 작성</u>하세요. 다음의 4 x 5 얼음 틀 예시에서는 아이스크림이 총 3개 생성됩니다.
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015020133274.png" alt="image-20201015020133274" style="zoom:67%;" />
+![image-20201015020133274](https://user-images.githubusercontent.com/45402031/96827365-68ad1b80-1470-11eb-9e1e-7bf08c90ef78.png)
 
 **입력 조건**
 
@@ -38,7 +38,7 @@ N x M 크기의 얼음 틀이 있습니다. 구멍이 뚫려 있는 부분은 0,
 - **문제 해결 아이디어**
   - 이 문제는 DFS 혹은 BFS로 해결할 수 있습니다. 일단 앞에서 배운 대로 얼음을 얼릴 수 있는 공간이 상, 하, 좌, 우로 연결되어 있다고 표현할 수 있으므로 그래프 형태로 모델링 할 수 있습니다. 다음과 같이 3 x 3 크기의 얼음 틀이 있다고 가정하고 생각해 봅시다.
     
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015021246183.png" alt="image-20201015021246183" style="zoom:67%;" />
+    ![image-20201015021246183](https://user-images.githubusercontent.com/45402031/96827391-75ca0a80-1470-11eb-94d1-750bb46db9be.png)
     
   - DFS를 활용하는 알고리즘은 다음과 같습니다.
     1. 특정한 지점의 주변 상, 하, 좌, 우를 살펴본 뒤에 주변 지점 중에서 값이 '0'이면서 아직 방문하지 않은 지점이 있다면 해당 지점을 방문합니다.
@@ -72,7 +72,7 @@ N x M 크기의 얼음 틀이 있습니다. 구멍이 뚫려 있는 부분은 0,
     
   - 예시로 다음과 같이 3 x 3 크기의 미로가 있다고 가정합시다.
     
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015023112874.png" alt="image-20201015023112874" style="zoom: 67%;" />
+    ![image-20201015023112874](https://user-images.githubusercontent.com/45402031/96827415-81b5cc80-1470-11eb-9557-a3fb2fb83e83.png)
     
     - **[Step 1]** 처음에 (1, 1)의 위치에서 시작합니다.
     
@@ -80,4 +80,4 @@ N x M 크기의 얼음 틀이 있습니다. 구멍이 뚫려 있는 부분은 0,
     
     - **[Step 3]** 마찬가지로 BFS를 계속 수행하면 결과적으로 다음과 같이 최단 경로 값들이 1씩 증가하는 형태로 변경됩니다.  
       
-      <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015023419730.png" alt="image-20201015023419730" style="zoom:67%;" />
+      ![image-20201015023419730](https://user-images.githubusercontent.com/45402031/96827439-9003e880-1470-11eb-9968-1254ff8bb580.png)
