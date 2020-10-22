@@ -323,8 +323,7 @@
 
 - 특정 조건에서의 **최단경로 문제**를 해결하기 위해 효과적으로 사용될 수 있음
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201015002844846.png" alt="image-20201015002844846" style="zoom:67%;" />
-
+  ![image-20201015002844846](https://user-images.githubusercontent.com/45402031/96076011-561e6980-0ee7-11eb-8aa1-5041f309a272.png)
 
 
 - **BFS 소스코드 예제 (Python)**
