@@ -192,7 +192,7 @@
 - 종료 조건을 제대로 명시하지 않으면 함수가 무한히 호출될 수 있음
 
   ```python
-  def recursive_function():
+  def recursive_function(i):
       # 100번째 호출을 했을 때 종료되도록 종료 조건 명시
       if i == 100:
           return
