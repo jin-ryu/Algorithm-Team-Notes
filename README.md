@@ -722,7 +722,7 @@
 
 - bisect_right(a, x): 정렬된 순서를 유지하면서 배열 a에 x를 삽입할 가장 오른쪽 인덱스를 반환
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201016140702045.png" alt="image-20201016140702045" style="zoom:67%;" />
+  ![image-20201016140702045](https://user-images.githubusercontent.com/45402031/97035621-90e86780-15a1-11eb-99a9-bf3d92b7b0b2.png)
 
 - **값이 특정 범위에 속하는 데이터 개수 구하기**
 
@@ -807,7 +807,7 @@
   - 단순 재귀 함수로 피보나치 수열을 해결하면 지수 시간 복잡도를 가지게 됩니다.
   - 다음과 같이 f(2)가 <u>여러 번 호출</u>되는 것을 확인할 수 있습니다. (**중복되는 부분 문제**)
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019202843158.png" alt="image-20201019202843158" style="zoom:67%;" />
+  ![image-20201019202843158](https://user-images.githubusercontent.com/45402031/97035751-c1c89c80-15a1-11eb-9906-370c76cae2cc.png)
 
 - **피보나치 수열의 시간 복잡도 분석**
 
@@ -885,7 +885,7 @@
 - **피보나치 수열: 메모이제이션 동작 분석**
   - 이미 계산된 결과를 메모리에 저장하면 다음과 같이 색칠된 노드만 처리할 것을 기대할 수 있습니다.
     
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019212832088.png" alt="image-20201019212832088" style="zoom:67%;" />
+    ![image-20201019212832088](https://user-images.githubusercontent.com/45402031/97035809-d9078a00-15a1-11eb-8b50-7a34c22485da.png)
     
   -  메모이제이션을 이용하는 경우 피보나치 수열 함수의 시간 복잡도는 **O(N)**입니다.
 
@@ -905,7 +905,7 @@
   - 한 번 기준 원소(Pivot)가 자리를 변경해서 자리를 잡으면 그 기준 원소의 위치는 바뀌지 않습니다.
   - 분할 이후 해당 피벗을 다시 처리해야하는 부분 문제를 호출하지 않습니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019213342546.png" alt="image-20201019213342546" style="zoom:67%;" />
+  ![image-20201019213342546](https://user-images.githubusercontent.com/45402031/97035876-f2a8d180-15a1-11eb-8f3d-5fd8422c0d03.png)
 
 #### 다이나믹 프로그래밍 문제에 접근하는 방법
 
@@ -928,7 +928,7 @@
   - 각 지점은 그래프에서 **노드**로 표현
   - 지점 간 연결된 도로는 그래프에서 **간선**으로 표현
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020015518056.png" alt="image-20201020015518056" style="zoom: 67%;" />
+![image-20201020015518056](https://user-images.githubusercontent.com/45402031/97035989-1cfa8f00-15a2-11eb-9ae6-3fbb9eb6d883.png)
 
 #### 다익스트라 알고리즘
 
@@ -957,18 +957,18 @@
 
   - **[초기 상태]** 그래프를 준비하고 출발 노드를 설정합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020020727476.png" alt="image-20201020020727476" style="zoom:67%;" />
+    ![image-20201020020727476](https://user-images.githubusercontent.com/45402031/97036197-72cf3700-15a2-11eb-8a82-ecb57f2e74f0.png)
 
   - **[Step 1]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **1번** 노드를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020020850941.png" alt="image-20201020020850941" style="zoom:67%;" />
+    ![image-20201020020850941](https://user-images.githubusercontent.com/45402031/97036243-837fad00-15a2-11eb-9686-678b17677e21.png)
 
   - **[Step 2]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **4번** 노드를 처리합니다.
-  - <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021026823.png" alt="image-20201020021026823" style="zoom:67%;" />
+    ![image-20201020021023417](https://user-images.githubusercontent.com/45402031/97036298-94c8b980-15a2-11eb-9ac7-308593062782.png)
 
   - **[Step 3]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **2번** 노드를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021235863.png" alt="image-20201020021235863" style="zoom:67%;" />
+    ![image-20201020021026823](https://user-images.githubusercontent.com/45402031/97036345-a7db8980-15a2-11eb-9f34-48bc7e08ac1f.png)
 
     - 일반적으로 최단 거리가 같을 때는 앞에 있는 노드를 우선적으로 선택
     - 이미 방문처리가 된 노드를 무시하게 구현해도 됨
@@ -976,7 +976,7 @@
 
   - **[Step 4]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **5번** 노드를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021511595.png" alt="image-20201020021511595" style="zoom:67%;" />
+    ![image-20201020021235863](https://user-images.githubusercontent.com/45402031/97036372-b4f87880-15a2-11eb-97a6-b05ea53edeb0.png)
 
   - **[Step 5]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **3번** 노드를 처리합니다.
 
