@@ -12,11 +12,11 @@
 
 - [금광](#금광)
 
-- [정수 삼각형](#https://www.acmicpc.net/problem/1932)
+- [정수 삼각형](https://www.acmicpc.net/problem/1932)
 
-- [퇴사](#https://www.acmicpc.net/problem/14501)
+- [퇴사](https://www.acmicpc.net/problem/14501)
 
-- [병사 배치하기](#https://www.acmicpc.net/problem/18353)
+- [병사 배치하기](https://www.acmicpc.net/problem/18353)
 
 - 못생긴 수
 
