@@ -42,17 +42,19 @@
 
     - [Step 1] 시작점: 0, 끝점: 19, 중간점: 9
       이때 필요한 떡의 크기: M=6이므로, **결과 저장**
-      ![image-20201016142807875](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201016142807875.png)
+      ![image-20201016142807875](https://user-images.githubusercontent.com/45402031/97037537-5e8c3980-15a4-11eb-8352-f505b1d80661.png)
     - [Step 2] 시작점: 10, 끝점: 19, 중간점: 14
       이때 필요한 떡의 크기: M=6이므로, **결과 저장**
-       ![image-20201016142906195](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201016142906195.png)
+       ![image-20201016142906195](https://user-images.githubusercontent.com/45402031/97037643-87143380-15a4-11eb-8849-31d50847c935.png)
 
     - [Step 3] 시작점: 15, 끝점: 19, 중간점: 17
       이때 필요한 떡의 크기: M=6이므로, **결과 저장하지 않음**
-      ![image-20201016143034319](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201016143034319.png)
+      ![image-20201016143034319](https://user-images.githubusercontent.com/45402031/97037709-a3b06b80-15a4-11eb-8075-53ba4f2d9f15.png)
+
     - [Step 4] 시작점: 15, 끝점: 16, 중간점: 15
       이때 필요한 떡의 크기: M=6이므로, **결과 저장**
-      ![image-20201016143121640](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201016143121640.png)
+      ![image-20201016143121640](https://user-images.githubusercontent.com/45402031/97037788-c2166700-15a4-11eb-92f9-79b31ab58f7d.png)
+      
 
   - 이러한 이진 탐색 과정을 반복하면 답을 도출할 수 있습니다.
 
