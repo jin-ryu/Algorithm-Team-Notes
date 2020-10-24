@@ -3,10 +3,10 @@
 ### 📝목차
 
 - [두 배열의 원소 교체](#두-배열의-원소-교체)
-- [국영수](#https://www.acmicpc.net/problem/10825)
-- [안테나](#https://www.acmicpc.net/problem/18310)
-- [실패율](#https://programmers.co.kr/learn/courses/30/lessons/42889)
-- [카드 정렬하기](#https://www.acmicpc.net/problem/1715)
+- [국영수](https://www.acmicpc.net/problem/10825)
+- [안테나](https://www.acmicpc.net/problem/18310)
+- [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
+- [카드 정렬하기](https://www.acmicpc.net/problem/1715)
 
 
 
