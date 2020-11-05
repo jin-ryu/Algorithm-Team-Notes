@@ -980,11 +980,11 @@
 
   - **[Step 5]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **3번** 노드를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021646376.png" alt="image-20201020021646376" style="zoom:67%;" />
+    ![image-20201020021646376](https://user-images.githubusercontent.com/45402031/98187292-edf5fd00-1f53-11eb-872e-fae3fbb20062.png)
 
   - **[Step 6]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **6번** 노드를 처리합니다.
 
-  - <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021721219.png" alt="image-20201020021721219" style="zoom:67%;" />
+    ![image-20201020021721219](https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png)
 
     - 다른 노드까지의 최단거리는 더 이상 바뀌지 않기 때문에, 마지막 노드는 처리하지 않아**도 결과가 동일**
 
@@ -1145,27 +1145,27 @@
 
   - **[초기 상태]** 그래프를 준비하고 출발 노드를 설정하여 우선순위 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020030510982.png" alt="image-20201020030510982" style="zoom:67%;" />
+    ![image-20201020030510982](https://user-images.githubusercontent.com/45402031/98187403-357c8900-1f54-11eb-8392-6948f433c3b2.png)
 
   - **[Step 1]** 우선순위 큐에서 원소를 꺼냅니다. **1번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020030844243.png" alt="image-20201020030844243" style="zoom:67%;" />
+    ![image-20201020030844243](https://user-images.githubusercontent.com/45402031/98187439-475e2c00-1f54-11eb-9beb-6ec6a3acf13c.png)
 
   - **[Step 2]** 우선순위 큐에서 원소를 꺼냅니다. **4번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031010043.png" alt="image-20201020031010043" style="zoom:67%;" />
+    ![image-20201020031010043](https://user-images.githubusercontent.com/45402031/98187460-57760b80-1f54-11eb-96a4-1a515a5ba55c.png)
 
   - **[Step 3]** 우선순위 큐에서 원소를 꺼냅니다. **2번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031143042.png" alt="image-20201020031143042" style="zoom:67%;" />
+    ![image-20201020031143042](https://user-images.githubusercontent.com/45402031/98187488-6492fa80-1f54-11eb-8a69-6ecada9eab23.png)
 
   - **[Step 4]** 우선순위 큐에서 원소를 꺼냅니다. **5번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031303368.png" alt="image-20201020031303368" style="zoom:67%;" />
+    ![image-20201020031303368](https://user-images.githubusercontent.com/45402031/98187563-8d1af480-1f54-11eb-967a-2567d05bd822.png)
 
   - **[Step 5]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031339374.png" alt="image-20201020031339374" style="zoom:67%;" />
+    ![image-20201020031339374](https://user-images.githubusercontent.com/45402031/98187587-9e640100-1f54-11eb-8233-ac4c9f3e1713.png)
 
   - **[Step 6]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
 
@@ -1173,7 +1173,7 @@
 
   - **[Step 7]** 우선순위 큐에서 원소를 꺼냅니다. **6번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031615356.png" alt="image-20201020031615356" style="zoom:67%;" />
+    ![image-20201020031615356](https://user-images.githubusercontent.com/45402031/98187611-b045a400-1f54-11eb-8e66-40fd0bb6e235.png)
 
   - **[Step 8]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
   
@@ -1212,23 +1212,23 @@
 
   - **[초기 상태]** 그래프를 준비하고 최단 거리 테이블을 초기화합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112403045.png" alt="image-20201020112403045" style="zoom:67%;" />
+    ![image-20201020112403045](https://user-images.githubusercontent.com/45402031/98187654-ca7f8200-1f54-11eb-8e4c-078774313082.png)
 
   - **[Step 1]** **1번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112458810.png" alt="image-20201020112458810" style="zoom:67%;" />
+    ![image-20201020112458810](https://user-images.githubusercontent.com/45402031/98187686-db2ff800-1f54-11eb-8810-ce441da2404e.png)
 
   - **[Step 2]** **2번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112546593.png" alt="image-20201020112546593" style="zoom:67%;" />
+    ![image-20201020112546593](https://user-images.githubusercontent.com/45402031/98187722-ebe06e00-1f54-11eb-8911-3bc2ca30a2ef.png)
 
   - **[Step 3]** **3번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112634044.png" alt="image-20201020112634044" style="zoom:67%;" />
+    ![image-20201020112634044](https://user-images.githubusercontent.com/45402031/98187748-fac72080-1f54-11eb-8ba4-014fce4f9815.png)
 
   - **[Step 4]** **4번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112708334.png" alt="image-20201020112708334" style="zoom:67%;" />
+    ![image-20201020112708334](https://user-images.githubusercontent.com/45402031/98187779-0adf0000-1f55-11eb-9765-f74c3e2d3a80.png)
 
 - **플로이드 워셜 알고리즘**
 
@@ -1313,33 +1313,33 @@
   - **[초기 단계]** 노드의 개수 크기와 부모 테이블을 초기화합니다.
     - 집합에 자기 자신 밖에 없기 때문에, 부모 노드를 자기 자신으로 초기화
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020120600450.png" alt="image-20201020120600450" style="zoom:67%;" />
+  ![image-20201020120600450](https://user-images.githubusercontent.com/45402031/98187865-3cf06200-1f55-11eb-9d95-31f3fac332fd.png)
 
   - **처리할 연산들**: **Union(1,4)**, Union(2,3), Union(2,4), Union(5,6)
   - **[Step 1]** 노드 1과 노드 4의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 1과 4이므로 더 큰 번호에 해당하는 루트 노드 4의 부모를 1로 설정합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020120810417.png" alt="image-20201020120810417" style="zoom:67%;" />
+  ![image-20201020120810417](https://user-images.githubusercontent.com/45402031/98187927-5c878a80-1f55-11eb-9fa1-cf68a1871097.png)
 
   - **처리할 연산들**: **Union(1,4), Union(2,3)**, Union(2,4), Union(5,6)
-  - **[Step 1]** 노드 2과 노드 3의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 2와 3이므로 더 큰 번호에 해당하는 루트 노드 3의 부모를 2로 설정합니다.
+  - **[Step 2]** 노드 2과 노드 3의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 2와 3이므로 더 큰 번호에 해당하는 루트 노드 3의 부모를 2로 설정합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020121006721.png" alt="image-20201020121006721" style="zoom:67%;" />
+  ![image-20201020121006721](https://user-images.githubusercontent.com/45402031/98187954-71fcb480-1f55-11eb-9bbf-00c146493eca.png)
 
   - **처리할 연산들**: **Union(1,4), Union(2,3), Union(2,4)**, Union(5,6)
-  - **[Step 2]** 노드 2과 노드 4의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 2와 1이므로 더 큰 번호에 해당하는 루트 노드 2의 부모를 1로 설정합니다.
+  - **[Step 3]** 노드 2과 노드 4의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 2와 1이므로 더 큰 번호에 해당하는 루트 노드 2의 부모를 1로 설정합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020121103327.png" alt="image-20201020121103327" style="zoom:67%;" />
+  ![image-20201020121103327](https://user-images.githubusercontent.com/45402031/98187997-893ba200-1f55-11eb-9ce4-a86b2515a59c.png)
 
   - **처리할 연산들**: **Union(1,4), Union(2,3), Union(2,4), Union(5,6)**
-  - **[Step 2]** 노드 5과 노드 6의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 5와 6이므로 더 큰 번호에 해당하는 루트 노드 6의 부모를 5로 설정합니다.
+  - **[Step 4]** 노드 5과 노드 6의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 5와 6이므로 더 큰 번호에 해당하는 루트 노드 6의 부모를 5로 설정합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020121220844.png" alt="image-20201020121220844" style="zoom:67%;" />
+  ![image-20201020121220844](https://user-images.githubusercontent.com/45402031/98188100-c1db7b80-1f55-11eb-970d-8f462235a550.png)
 
 - **서로소 집합 자료구조: 연결성**
 
   - 서로소 집합 자료구조에서는 **연결성**을 통해 손쉽게 집합의 형태를 확인할 수 있습니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020121322716.png" alt="image-20201020121322716" style="zoom: 67%;" />
+    ![image-20201020121322716](https://user-images.githubusercontent.com/45402031/98188154-d61f7880-1f55-11eb-878a-7008d0a01cde.png)
 
   - 기본적인 형태의 서로소 집합 자료구조에서는 루트 노드에 즉시 접근할 수 없습니다.
 
@@ -1402,7 +1402,7 @@
 
     - **수행된 연산들**: Union(4,5), Union(3,4), Union(2,3), Union(1,2)
 
-      <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020133504479.png" alt="image-20201020133504479" style="zoom:67%;" />
+      ![image-20201020133504479](https://user-images.githubusercontent.com/45402031/98188186-e6cfee80-1f55-11eb-873a-a953aea51bda.png)
 
 - **서로소 집합 자료구조: 경로 압축**
 
@@ -1424,7 +1424,7 @@
 
   - 동일한 예시에 대해서 **모든 합집합(Union) 함수를 처리한 후 각 원소에 대하여 찾기(Find) 함수를 수행하면 다음과 같이 부모 테이블이 갱신**됩니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020134000401.png" alt="image-20201020134000401" style="zoom:67%;" />
+    ![image-20201020134000401](https://user-images.githubusercontent.com/45402031/98188226-f94a2800-1f55-11eb-985d-9266b39a36d7.png)
 
   - 기본적인 방법에 비하여 시간 복잡도가 개선됩니다.
 
@@ -1491,19 +1491,19 @@
 
   - **[초기 단계]** 모든 노드에 대하여 자기 자신을 부모로 설정하는 형태로 부모 테이블을 초기화합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020134827740.png" alt="image-20201020134827740" style="zoom:67%;" />
+    ![image-20201020134827740](https://user-images.githubusercontent.com/45402031/98188267-0f57e880-1f56-11eb-866e-102c9a77151c.png)
 
   - **[Step 1]** 간선 (1,2)를 확인합니다. 노드 1과 노드 2의 루트 노드는 각각 1과 2입니다. 따라서 더 큰 번호에 해당하는 노드 2의 부모 노드를 1로 변경합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020135132512.png" alt="image-20201020135132512" style="zoom:67%;" />
+    ![image-20201020135132512](https://user-images.githubusercontent.com/45402031/98188302-20a0f500-1f56-11eb-826c-4334b318d91e.png)
 
   - **[Step 2]** 간선 (1,3)를 확인합니다. 노드 1과 노드 3의 루트 노드는 각각 1과 3입니다. 따라서 더 큰 번호에 해당하는 노드 3의 부모 노드를 1로 변경합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020135231321.png" alt="image-20201020135231321" style="zoom:67%;" />
+    ![image-20201020135231321](https://user-images.githubusercontent.com/45402031/98188339-31516b00-1f56-11eb-8879-2c6bcb18db5b.png)
 
   - **[Step 3]** 간선 (2,3)를 확인합니다. 이미 노드 2과 노드 3의 루트 노드는 모두 1입니다. 다시 말해 **사이클이 발생**한다는 것을 알 수 있습니다. 
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020135337493.png" alt="image-20201020135337493" style="zoom:67%;" />
+    ![image-20201020135337493](https://user-images.githubusercontent.com/45402031/98188380-4201e100-1f56-11eb-9080-0c4c83bf2da9.png)
 
 - **서로소 집합을 활용한 사이클 판별**
 
@@ -1556,7 +1556,7 @@
 
   - 모든 노드가 포함되어 서로 연결되면서 사이클이 존재하지 않는다는 조건은 **트리**의 조건이기도 합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020140243122.png" alt="image-20201020140243122" style="zoom:67%;" />
+  ![image-20201020140243122](https://user-images.githubusercontent.com/45402031/98188428-547c1a80-1f56-11eb-802e-f8bbddfaa3be.png)
 
 #### 최소 신장 트리
 
@@ -1566,7 +1566,7 @@
 
   - 두 도시 A,B를 선택했을 때 A에서 B로 이동하는 경로가 반드시 존재하도록 도로를 설치합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020140711650.png" alt="image-20201020140711650" style="zoom:67%;" />
+    ![image-20201020140711650](https://user-images.githubusercontent.com/45402031/98188472-63fb6380-1f56-11eb-96e7-9d5289e2e763.png)
 
 #### 크루스칼 알고리즘
 
@@ -1590,21 +1590,21 @@
 
   - **[초기 단계]** 그래프의 모든 간선 정보에 대하여 **오름차순 정렬을 수행**합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020202619435.png" alt="image-20201020202619435" style="zoom:67%;" />
+    ![image-20201020202619435](https://user-images.githubusercontent.com/45402031/98188578-97d68900-1f56-11eb-9eb2-bc3af4bd51cd.png)
 
     - 최소 신장 트리의 간선의 개수 = 전체 노드의 개수 - 1
 
   - **[Step 1]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (3,4)를 선택하여 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020202822380.png" alt="image-20201020202822380" style="zoom:67%;" />
+    ![image-20201020202822380](https://user-images.githubusercontent.com/45402031/98188607-aa50c280-1f56-11eb-922c-f15bb63ff03f.png)
 
   - **[Step 2]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (4,7)를 선택하여 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020203026936.png" alt="image-20201020203026936" style="zoom:67%;" />
+    ![image-20201020203026936](https://user-images.githubusercontent.com/45402031/98188638-be94bf80-1f56-11eb-8d12-1702bcc82d19.png)
 
   - **[Step 3]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (4,6)을 선택하여 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020203124197.png" alt="image-20201020203124197" style="zoom:67%;" />
+    ![image-20201020203124197](https://user-images.githubusercontent.com/45402031/98188664-cbb1ae80-1f56-11eb-8a61-0627ea2c85ad.png)
 
   - **[Step 4]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (6,7)을 선택하여 처리합니다.
 
@@ -1612,11 +1612,11 @@
 
   - **[Step 5]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (1,2)를 선택하여 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020203314588.png" alt="image-20201020203314588" style="zoom:67%;" />
+    ![image-20201020203314588](https://user-images.githubusercontent.com/45402031/98188695-d79d7080-1f56-11eb-8ca9-aa14ff2ef80d.png)
 
   - **[Step 6]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (2,6)를 선택하여 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020203615365.png" alt="image-20201020203615365" style="zoom:67%;" />
+    ![image-20201020203615365](https://user-images.githubusercontent.com/45402031/98188715-e6842300-1f56-11eb-91bd-1bb1a76c39eb.png)
 
   - **[Step 7]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (2,3)를 선택하여 처리합니다.
 
@@ -1624,7 +1624,7 @@
 
   - **[Step 8]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (5,6)를 선택하여 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020203738534.png" alt="image-20201020203738534" style="zoom:67%;" />
+    ![image-20201020203738534](https://user-images.githubusercontent.com/45402031/98188762-f69c0280-1f56-11eb-93f4-a53149e8767f.png)
 
   - **[Step 9]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (1,5)를 선택하여 처리합니다.
 
@@ -1634,7 +1634,7 @@
 
     - 최소 신장 트리에 포함되어 있는 간선의 비용만 모두 더하면, 그 값이 최종 비용에 해당합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020204152942.png" alt="image-20201020204152942" style="zoom: 50%;" />
+    ![image-20201020204152942](https://user-images.githubusercontent.com/45402031/98188786-061b4b80-1f57-11eb-888b-5b8060337b2c.png)
 
 - **크루스칼 알고리즘 (Python)**
 
@@ -1704,7 +1704,7 @@
 
   - **진출차수(Outdegree)**: 특정한 노드에서 나가는 간선의 개수
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020204746113.png" alt="image-20201020204746113" style="zoom: 50%;" />
+    ![image-20201020204746113](https://user-images.githubusercontent.com/45402031/98188826-17fcee80-1f57-11eb-84a4-6a928ba17f1d.png)
 
 - **위상 정렬 알고리즘**
 
@@ -1730,13 +1730,13 @@
 
     - 처음에 노드 1이 큐에 삽입됩니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020205238222.png" alt="image-20201020205238222" style="zoom:67%;" />
+    ![image-20201020205238222](https://user-images.githubusercontent.com/45402031/98188867-2ba85500-1f57-11eb-90e2-364502b3d3cc.png)
 
   - **[Step 1]** 큐에서 **노드 1**을 꺼낸 뒤에 **노드 1**에서 나가는 간선을 제거합니다.
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020205357540.png" alt="image-20201020205357540" style="zoom:67%;" />
+    ![image-20201020205357540](https://user-images.githubusercontent.com/45402031/98188891-37941700-1f57-11eb-88e5-de5ce9db0152.png)
 
     - 여러개의 노드가 한번에 큐에 들어갈 때는 어떤 순서든지 상관 없지만, 일반적으로 노드 번호가 낮은 번호가 우선적으로 들어간다.
 
@@ -1744,13 +1744,13 @@
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020205538238.png" alt="image-20201020205538238" style="zoom:67%;" />
+    ![image-20201020205538238](https://user-images.githubusercontent.com/45402031/98188922-45e23300-1f57-11eb-916b-38bf6c5c5a77.png)
 
   - **[Step 3]** 큐에서 **노드 5**을 꺼낸 뒤에 **노드 5**에서 나가는 간선을 제거합니다.
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020205640279.png" alt="image-20201020205640279" style="zoom:67%;" />
+    ![image-20201020205640279](https://user-images.githubusercontent.com/45402031/98188950-55fa1280-1f57-11eb-9811-d5c4f99f5aa2.png)
 
   - **[Step 4]** 큐에서 **노드 3**을 꺼낸 뒤에 **노드 3**에서 나가는 간선을 제거합니다.
 
@@ -1760,13 +1760,13 @@
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020205751491.png" alt="image-20201020205751491" style="zoom:67%;" />
+    ![image-20201020205751491](https://user-images.githubusercontent.com/45402031/98188980-63af9800-1f57-11eb-9bf5-d2c6fc030e99.png)
 
   - **[Step 6]** 큐에서 **노드 4**을 꺼낸 뒤에 **노드 4**에서 나가는 간선을 제거합니다.
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020205823926.png" alt="image-20201020205823926" style="zoom:67%;" />
+    ![image-20201020205823926](https://user-images.githubusercontent.com/45402031/98189015-732ee100-1f57-11eb-8142-ef7d6bf4cf93.png)
 
   - **[Step 7]** 큐에서 **노드 7**을 꺼낸 뒤에 **노드 7**에서 나가는 간선을 제거합니다.
     
@@ -1953,7 +1953,7 @@
   - **합이 M인 부분 연속 수열의 개수**를 구해보세요.
   - 수행 시간 제한은 **O(N)**입니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021121903639.png" alt="image-20201021121903639" style="zoom:67%;" />
+  ![image-20201021121903639](https://user-images.githubusercontent.com/45402031/98189067-8a6dce80-1f57-11eb-9ed6-5b79c29db1aa.png)
 
 -  **특정한 합을 가지는 부분 연속 수열 찾기: 문제 해결 아이디어**
 
@@ -1965,7 +1965,7 @@
     4. 현재 부분 합이 M보다 크거나 같다면, start를 1 증가시킨다.
     5. 모든 경우를 확인할 때까지 2번부터 4번까지의 과정을 반복한다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021122512703.png" alt="image-20201021122512703" style="zoom:67%;" />
+    ![image-20201021122512703](https://user-images.githubusercontent.com/45402031/98189097-99ed1780-1f57-11eb-8149-43f5f7b59211.png)
 
   - **M = 5**
 
@@ -1974,63 +1974,63 @@
     - 현재의 부분합은 1이므로 무시합니다.
     - 현재 카운트: 0
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021122641113.png" alt="image-20201021122641113" style="zoom:67%;" />
+    ![image-20201021122641113](https://user-images.githubusercontent.com/45402031/98189125-a7a29d00-1f57-11eb-8523-2d83c0f78660.png)
 
   - **[Step 1]** 이전 단계에서의 부분합이 1이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 3이므로 무시합니다.
     - 현재 카운트: 0
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021122801810.png" alt="image-20201021122801810" style="zoom:67%;" />
+    ![image-20201021122801810](https://user-images.githubusercontent.com/45402031/98189155-b5582280-1f57-11eb-9af6-8f3732462a21.png)
 
   - **[Step 2]** 이전 단계에서의 부분합이 3이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 6이므로 무시합니다.
     - 현재 카운트: 0
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021122850453.png" alt="image-20201021122850453" style="zoom:67%;" />
+    ![image-20201021122850453](https://user-images.githubusercontent.com/45402031/98189185-c2751180-1f57-11eb-988f-51ad2d77e726.png)
 
   - **[Step 3]** 이전 단계에서의 부분합이 6이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 5이므로 무시합니다.
     - 현재 카운트: 1
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021122952072.png" alt="image-20201021122952072" style="zoom:67%;" />
+    ![image-20201021122952072](https://user-images.githubusercontent.com/45402031/98189207-d02a9700-1f57-11eb-8611-5555397872c7.png)
 
   - **[Step 4]** 이전 단계에서의 부분합이 5이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 3이므로 무시합니다.
     - 현재 카운트: 1
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021123018405.png" alt="image-20201021123018405" style="zoom:67%;" />
+    ![image-20201021123018405](https://user-images.githubusercontent.com/45402031/98189229-de78b300-1f57-11eb-9147-50e367ccfeb4.png)
 
   - **[Step 5]** 이전 단계에서의 부분합이 3이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 5이므로 카운트를 증가시킵니다.
     - 현재 카운트: 2
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021123114262.png" alt="image-20201021123114262" style="zoom:67%;" />
+    ![image-20201021123114262](https://user-images.githubusercontent.com/45402031/98189264-f0f2ec80-1f57-11eb-8f1d-2a146d0ed660.png)
 
   - **[Step 6]** 이전 단계에서의 부분합이 5이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 2이므로 무시합니다.
     - 현재 카운트: 2
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021123356751.png" alt="image-20201021123356751" style="zoom:67%;" />
+    ![image-20201021123356751](https://user-images.githubusercontent.com/45402031/98189286-ff410880-1f57-11eb-8803-7e4d148d5880.png)
 
   - **[Step 7]** 이전 단계에서의 부분합이 2이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 7이므로 무시합니다.
     - 현재 카운트: 2
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021123446253.png" alt="image-20201021123446253" style="zoom: 67%;" />
+    ![image-20201021123446253](https://user-images.githubusercontent.com/45402031/98189321-108a1500-1f58-11eb-9bab-4735b8d00fc7.png)
 
   - **[Step 8]** 이전 단계에서의 부분합이 7이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 5이므로 카운트를 증가시킵니다.
     - 현재 카운트: 3
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021123554464.png" alt="image-20201021123554464" style="zoom:67%;" />
+    ![image-20201021123554464](https://user-images.githubusercontent.com/45402031/98189344-213a8b00-1f58-11eb-8f79-9d72bdf7e391.png)
 
 - **특정한 합을 가지는 부분 연속 수열 찾기: 코드 예시 (Python)**
 
@@ -2077,7 +2077,7 @@
     - N개의 수 위치 각각에 대하여 접두사 합을 계산하여 P에 저장합니다.
     - 매 M개의 쿼리 정보를 확일할 때 구간 합은 P[Right] - P[Left-1]입니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201021124627354.png" alt="image-20201021124627354" style="zoom:67%;" />
+  ![image-20201021124627354](https://user-images.githubusercontent.com/45402031/98189364-2c8db680-1f58-11eb-9d05-15cdb7252622.png)
 
 - **구간 합 빠르게 계산하기: 코드 예시 (Python)**
 

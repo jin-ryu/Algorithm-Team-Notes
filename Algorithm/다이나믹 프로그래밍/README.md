@@ -30,7 +30,7 @@
 - 각 식량창고에는 정해진 수의 식량을 저장하고 있으며 개미 전사는 식량창고를 선택적으로 약탈하여 식량을 빼앗을 예정입니다. 이때 메뚜기 정찰병들은 일직선상에 존재하는 식량창고 중에서 서로 인접한 식량창고가 공격받으면 바로 알아챌 수 있습니다.
 - 따라서 개미 전사가 정찰병에게 들키지 않고 식량창고를 약탈하기 위해서는 <u>최소한 한 칸 이상 떨어진 식량창고를 약탈</u>해야 합니다.
 
-![image-20201019214222976](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019214222976.png)
+![image-20201019214222976](https://user-images.githubusercontent.com/45402031/97297689-b32a0000-1895-11eb-9f54-9c7435b7197d.png)
 
 - 예를 들어 식량창고 4개가 다음과 같이 존재한다고 가정합시다.
 
@@ -62,17 +62,17 @@
     - 식량을 선택할 수 있는 경우의 수는 다음과 같이 8가지입니다.
     - 7번째 경우에서 8만큼의 식량을 얻을 수 있으므로 **최적의 해는 8**입니다.
 
-    ![image-20201019214917902](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019214917902.png)
+    ![image-20201019214917902](https://user-images.githubusercontent.com/45402031/97297759-c89f2a00-1895-11eb-8a82-af350ddc8758.png)
 
   - a<sub>i</sub>번째 식량창고까지의 최적의 해 (얻을 수 있는 식량의 최댓값)
 
     - 이렇게 정의한다면 다이나믹 프로그래밍을 적용할 수 있습니다.
 
-    ![image-20201019215630801](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019215630801.png)
+    ![image-20201019215630801](https://user-images.githubusercontent.com/45402031/97297803-dc4a9080-1895-11eb-80ba-2f5df61e7abb.png)
 
   - 왼쪽부터 차례대로 식량창고를 턴다고 했을 때, 특정한 i번째 식량창고에 대해서 털지 안 털지의 여부를 결정하면, 아래 **2가지** 경우 중에서 더 많은 식량을 털 수 있는 경우를 선택하면 됩니다.
 
-    ![image-20201019220152428](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019220152428.png)
+    ![image-20201019220152428](https://user-images.githubusercontent.com/45402031/97297947-1451d380-1896-11eb-9d58-dae54c0d1946.png)
 
   - a<sub>i</sub> =  i번째 식량창고까지의 최적의 해 (얻을 수 있는 식량의 최댓값)
 
@@ -112,7 +112,7 @@
   - 피보나치 수열  문제를 도식화한 것처럼 함수가 호출되는 과정을 그림으로 그려보면 다음과 같습니다.
 
     - **최적 부분 구조**와 **중복되는 부분 문제**를 만족합니다.
-      ![image-20201019221235874](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019221235874.png)
+      ![image-20201019221235874](https://user-images.githubusercontent.com/45402031/97298008-2895d080-1896-11eb-89b7-66fe905b2d34.png)
 
   - a<sub>i</sub> = i를 1로 만들기 위한 최소 연산 횟수
 
@@ -163,35 +163,35 @@
       - INF은 특정 금액을 만들 수 있는 화폐 구성이 가능하지 않다는 의미를 가집니다.
       - 본 문제에서는 10, 001을 사용할 수 있습니다.
 
-      ![image-20201019222353347](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201019222353347.png)
+      ![image-20201019222353347](https://user-images.githubusercontent.com/45402031/97298057-3ba8a080-1896-11eb-9e0c-b277d10b733a.png)
       
     - **Step 1**
     
       - 첫 번째 화폐 단위인 2를 확인합니다.
       - 점화식에 따라서 다음과 같이 리스트가 갱신됩니다.
     
-      ![image-20201020010359863](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020010359863.png)
+      ![image-20201020010359863](https://user-images.githubusercontent.com/45402031/97298116-53802480-1896-11eb-93bc-583325efaced.png)
     
     - **Step 2**
     
       - 두 번째 화폐 단위인 3을 확인합니다.
       - 점화식에 따라서 다음과 같이 리스트가 갱신됩니다.
     
-      ![image-20201020011401601](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020011401601.png)
+      ![image-20201020011401601](https://user-images.githubusercontent.com/45402031/97298184-6a267b80-1896-11eb-9064-eaea37706593.png)
     
     - **Step 3**
     
       - 세 번째 화폐 단위인 5를 확인합니다.
       - 점화식에 따라서 다음과 같이 최종적으로 리스트가 갱신됩니다.
     
-      ![image-20201020011448383](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020011448383.png)
+      ![image-20201020011448383](https://user-images.githubusercontent.com/45402031/97298219-7a3e5b00-1896-11eb-92c8-6d3a3e457938.png)
 
 ## 금광
 
 - n x m 크기의 금광이 있습니다. 금광은 1 x 1크기의 칸으로 나누어져 있으며, 각 칸은 특정한 크기의 금이 들어 있습니다.
 - 채굴자는 첫 번째 열부터 출발하여 금을 캐기 시작합니다. 맨 처음에는 첫 번째 열의 어느 행에서든 출발할 수 있습니다. 이후에 m - 1번에 걸쳐서 매번 오른쪽 위, 오른쪽, 오른쪽 아래 3가지 중 하나의 위치로 이동해야 합니다. 결과적으로 **채굴자가 얻을 수 있는 금의 최대 크기**를 출력하는 프로그램을 작성하세요.
 
-![image-20201020011916453](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020011916453.png)
+![image-20201020011916453](https://user-images.githubusercontent.com/45402031/97298270-8de9c180-1896-11eb-9cb1-102fd25014d6.png)
 
 **입력 조건**
 
@@ -217,7 +217,7 @@
 
   - **세 가지** 경우 중에서 <u>가장 많은 금을 가지고 있는 경우</u>를 테이블에 갱신해주어 문제를 해결합니다.
 
-    ![image-20201020012949506](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020012949506.png)
+    ![image-20201020012949506](https://user-images.githubusercontent.com/45402031/97298340-a22dbe80-1896-11eb-8c2e-9cd6b3b4d99a.png)
 
   - `array[i][j]` = i 행 j열에 존재하는 금의 양
 
@@ -234,7 +234,7 @@
 
     - 바로 DP 테이블에 초기 데이터를 담에서 다이나믹 프로그래밍을 적용할 수 있습니다.
 
-  ![image-20201020013315550](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020013315550.png)
+  ![image-20201020013315550](https://user-images.githubusercontent.com/45402031/97298442-bec9f680-1896-11eb-9542-2705910fd54e.png)
 - **정당성 분석**
   
   - N이 아무리 큰 수여도, K로 계속 나눈다면 기하급수적으로 빠르게 줄일 수 있음
@@ -247,9 +247,9 @@
 - 병사를 배치할 때는 **전투력이 높은 병사가 앞쪽에 오도록 내림차순으로 배치**를 하고자 합니다. 다시 말해 앞쪽에 있는 병사의 전투력이 항상 뒤쪽에 있는 병사보다 높아야 합니다.
 - 또한 배치 과정에서는 특정한 위치에 있는 병사를 열외시키는 방법을 이용합니다. 그러면서도 남아 있는 병사의 수가 최대가 되도록 하고 싶습니다.
 - 예를 들어, N = 7일때 나열된 병사들의 전투력이 다음과 같다고 가정하겠습니다.
-  ![image-20201020013545510](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020013545510.png)
+  ![image-20201020013545510](https://user-images.githubusercontent.com/45402031/97298508-dacd9800-1896-11eb-8146-77d1c77bbca9.png)
 - 이때 3번 병사와 6번 병사를 열외시키면, 다음과 같이 남아 있는 병사의 수가 내림차순의 형태가 되며 5명이 됩니다. 이는 남아 있는 병사의 수가 최대가 되도록 하는 방법입니다.
-  ![image-20201020013627573](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020013627573.png)
+  ![image-20201020013627573](https://user-images.githubusercontent.com/45402031/97298549-e91bb400-1896-11eb-97e4-af9b9b2b5865.png)
 
 - 병사에 대한 정보가 주어졌을 때, 남아 있는 병사의 수가 최대가 되도록 하기 위해서 열외시켜야 하는 병사의 수를 출력하는 프로그램을 작성하세요.
 
@@ -283,10 +283,10 @@
   
     - 점화식은 다음과 같습니다.
       $$
-      모든  0<=j<i에 대하여,  D[i] = max(D[i], D[j] + 1)  if array[j] < array[i]
+      모든  0<=j<i에 대하여,  D[i] = max(D[i], D[j] + 1)  if array[j] < array[i] 
       $$
-      ![image-20201020014749640](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020014749640.png)
-  
+      ![image-20201020014749640](https://user-images.githubusercontent.com/45402031/97298588-fcc71a80-1896-11eb-8e1e-cdf04649c70f.png)
+
   - 가장 먼저 입력 받은 병사 정보의 순서를 뒤집습니다.
   
   - **가장 긴 증가하는 부분 수열 (LIS)** 알고리즘을 수행하여 정답을 도출합니다.
