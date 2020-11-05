@@ -980,11 +980,11 @@
 
   - **[Step 5]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **3번** 노드를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021646376.png" alt="image-20201020021646376" style="zoom:67%;" />
+    ![image-20201020021646376](https://user-images.githubusercontent.com/45402031/98187292-edf5fd00-1f53-11eb-872e-fae3fbb20062.png)
 
   - **[Step 6]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **6번** 노드를 처리합니다.
 
-  - <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020021721219.png" alt="image-20201020021721219" style="zoom:67%;" />
+    ![image-20201020021721219](https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png)
 
     - 다른 노드까지의 최단거리는 더 이상 바뀌지 않기 때문에, 마지막 노드는 처리하지 않아**도 결과가 동일**
 
@@ -1145,27 +1145,27 @@
 
   - **[초기 상태]** 그래프를 준비하고 출발 노드를 설정하여 우선순위 큐에 삽입합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020030510982.png" alt="image-20201020030510982" style="zoom:67%;" />
+    ![image-20201020030510982](https://user-images.githubusercontent.com/45402031/98187403-357c8900-1f54-11eb-8392-6948f433c3b2.png)
 
   - **[Step 1]** 우선순위 큐에서 원소를 꺼냅니다. **1번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020030844243.png" alt="image-20201020030844243" style="zoom:67%;" />
+    ![image-20201020030844243](https://user-images.githubusercontent.com/45402031/98187439-475e2c00-1f54-11eb-9beb-6ec6a3acf13c.png)
 
   - **[Step 2]** 우선순위 큐에서 원소를 꺼냅니다. **4번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031010043.png" alt="image-20201020031010043" style="zoom:67%;" />
+    ![image-20201020031010043](https://user-images.githubusercontent.com/45402031/98187460-57760b80-1f54-11eb-96a4-1a515a5ba55c.png)
 
   - **[Step 3]** 우선순위 큐에서 원소를 꺼냅니다. **2번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031143042.png" alt="image-20201020031143042" style="zoom:67%;" />
+    ![image-20201020031143042](https://user-images.githubusercontent.com/45402031/98187488-6492fa80-1f54-11eb-8a69-6ecada9eab23.png)
 
   - **[Step 4]** 우선순위 큐에서 원소를 꺼냅니다. **5번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031303368.png" alt="image-20201020031303368" style="zoom:67%;" />
+    ![image-20201020031303368](https://user-images.githubusercontent.com/45402031/98187563-8d1af480-1f54-11eb-967a-2567d05bd822.png)
 
   - **[Step 5]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031339374.png" alt="image-20201020031339374" style="zoom:67%;" />
+    ![image-20201020031339374](https://user-images.githubusercontent.com/45402031/98187587-9e640100-1f54-11eb-8233-ac4c9f3e1713.png)
 
   - **[Step 6]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
 
@@ -1173,7 +1173,7 @@
 
   - **[Step 7]** 우선순위 큐에서 원소를 꺼냅니다. **6번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020031615356.png" alt="image-20201020031615356" style="zoom:67%;" />
+    ![image-20201020031615356](https://user-images.githubusercontent.com/45402031/98187611-b045a400-1f54-11eb-8e66-40fd0bb6e235.png)
 
   - **[Step 8]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
   
@@ -1212,23 +1212,23 @@
 
   - **[초기 상태]** 그래프를 준비하고 최단 거리 테이블을 초기화합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112403045.png" alt="image-20201020112403045" style="zoom:67%;" />
+    ![image-20201020112403045](https://user-images.githubusercontent.com/45402031/98187654-ca7f8200-1f54-11eb-8e4c-078774313082.png)
 
   - **[Step 1]** **1번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112458810.png" alt="image-20201020112458810" style="zoom:67%;" />
+    ![image-20201020112458810](https://user-images.githubusercontent.com/45402031/98187686-db2ff800-1f54-11eb-8810-ce441da2404e.png)
 
   - **[Step 2]** **2번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112546593.png" alt="image-20201020112546593" style="zoom:67%;" />
+    ![image-20201020112546593](https://user-images.githubusercontent.com/45402031/98187722-ebe06e00-1f54-11eb-8911-3bc2ca30a2ef.png)
 
   - **[Step 3]** **3번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112634044.png" alt="image-20201020112634044" style="zoom:67%;" />
+    ![image-20201020112634044](https://user-images.githubusercontent.com/45402031/98187748-fac72080-1f54-11eb-8ba4-014fce4f9815.png)
 
   - **[Step 4]** **4번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201020112708334.png" alt="image-20201020112708334" style="zoom:67%;" />
+    ![image-20201020112708334](https://user-images.githubusercontent.com/45402031/98187779-0adf0000-1f55-11eb-9765-f74c3e2d3a80.png)
 
 - **플로이드 워셜 알고리즘**
 
