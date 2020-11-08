@@ -6,7 +6,7 @@
 
 - [전보](#전보)
 
-- [플로이드](#https://www.acmicpc.net/problem/11404)
+- [플로이드](https://www.acmicpc.net/problem/11404)
 
 - 정확한 순위
 
