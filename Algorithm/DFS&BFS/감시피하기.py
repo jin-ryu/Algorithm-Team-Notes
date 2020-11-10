@@ -16,11 +16,6 @@ def dfs(x, y, d):
                 stack.append((nx, ny, d))   # 위치와 탐색방향 추가
     return True
 
-def print_data():
-    for i in range(n):
-        print(data[i])
-    print()
-
 def process():
     for x, y in student:
         for d in range(4):
@@ -33,7 +28,6 @@ n = int(input())
 data = []
 teacher = []
 student = []
-spaces = []
 
 for i in range(n):
     data.append(input().split())
@@ -42,13 +36,9 @@ for i in range(n):
             teacher.append((i, j))
         if data[i][j] == 'S':
             student.append((i, j))
-        if data[i][j] == 'X':
-            spaces.append((i, j))
-
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
-'''
 seen = []
 # 선생님의 시야에 있는 빈 칸만 뽑음
 for i in range(len(teacher)):
@@ -60,26 +50,20 @@ for i in range(len(teacher)):
             seen.append((j, y))
 
 seen = list(set(seen))  # 중복 제거
-'''
-find = False
+
+
 # 시야에 있는 빈칸 중 3개를 뽑음
-comb = list(combinations(spaces, 3))
+comb = list(combinations(seen, 3))
 
 for i in range(len(comb)):
     for x, y in comb[i]:    # 벽 설치
             data[x][y] = 'O'    
-    print_data()
 
     if process():
-        find = True
+        print("YES")
         break
 
     for x, y in comb[i]:    # 벽 제거
             data[x][y] = 'X'
-    print_data()
-
-
-if find:   # 3개 벽 세워서 진행
-    print("YES")
 else:
     print("NO")
