@@ -278,7 +278,7 @@
 
 <img src="https://user-images.githubusercontent.com/45402031/96075853-ee681e80-0ee6-11eb-9602-3bf16cfbe937.png" alt="image-20201015001153248" style="zoom:67%;" />
 
-- **DFS 소스코드 예제 (Python)**
+- [**DFS 소스코드 예제 (Python)**](python-algorithm-team-notes/dfs소스코드.py)
 
   ```python
   # DFS 메서드 정의
