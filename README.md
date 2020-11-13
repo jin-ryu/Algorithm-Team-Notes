@@ -278,38 +278,7 @@
 
 <img src="https://user-images.githubusercontent.com/45402031/96075853-ee681e80-0ee6-11eb-9602-3bf16cfbe937.png" alt="image-20201015001153248" style="zoom:67%;" />
 
-- [**DFS 소스코드 예제 (Python)**](Source/DFS소스코드.py)
-
-  ```python
-  # DFS 메서드 정의
-  def dfs(graph, v, visited):
-      # 현재 노드를 방문 처리
-      visited[v] =  True
-      print(v, end = ' ')
-      # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
-      for i in graph[v]:
-          if not visited[i]:
-              dfs(graph, i, visited)	
-  
-  # 각 노드가 연결된 정보를 표현 (2차원 리스트)
-  graph = [
-      [],
-      [2, 3, 8],
-      [1, 7],
-      [1, 4, 5],
-      [3, 5],
-      [3, 4],
-      [7],
-      [2, 6, 8],
-      [1, 7]
-  ]
-  
-  # 각 노드가 방문된 정보를 표현 (1차원 리스트)
-  visited = [False] * 9
-  
-  # 정의된 DFS 함수 호출
-  dfs(graph, 1, visited)
-  ```
+- [DFS 소스코드 예제 (Python)](Source/DFS소스코드.py)
   
 
 #### BFS
@@ -326,7 +295,7 @@
   ![image-20201015002844846](https://user-images.githubusercontent.com/45402031/96076011-561e6980-0ee7-11eb-8aa1-5041f309a272.png)
 
 
-- **BFS 소스코드 예제 (Python)**
+- [BFS 소스코드 예제 (Python)](Source/BFS소스코드.py)
 
   ```python
   from collections import deque
@@ -654,7 +623,7 @@
     - 3단계를 거치면 4개가량의 데이터만 남습니다.
   - 다시 말해 이진 탐색은 탐색 범위를 절반씩 줄이며, 시간 복잡도는 **O(logN)**을 보장합니다.
 
-- **이진 탐색 소스코드: 재귀적 구현 (Python)**
+- [이진 탐색 소스코드: 재귀적 구현 (Python)](Source/이진탐색소스코드(재귀).py)
 
   ```python
   # 이진 탐색 소스코드 구현 (재귀 함수)
@@ -685,7 +654,7 @@
       print(result + 1)
   ```
 
-- **이진 탐색 소스코드: 반복문 구현 (Python)**
+- [이진 탐색 소스코드: 반복문 구현 (Python)](Source/이진탐색소스코드(반복문).py)
 
   ```python
   # 이진 탐색 소스코드 구현 (반복문)
@@ -724,7 +693,7 @@
 
   ![image-20201016140702045](https://user-images.githubusercontent.com/45402031/97035621-90e86780-15a1-11eb-99a9-bf3d92b7b0b2.png)
 
-- **값이 특정 범위에 속하는 데이터 개수 구하기**
+- [값이 특정 범위에 속하는 데이터 개수 구하기](Source/이진탐색라이브러리.py)
 
   ```python
   from bisect import bisect_left, bisect_right
@@ -843,7 +812,7 @@
     (엄밀히 말하면 서로 다른 개념)
   - 한 번 계산된 결과를 담아 놓기만 하고 다이나믹 프로그래밍을 위해 활용하지 않을 수도 있습니다.
 
-- **피보나치 수열: 탑다운 다이나믹 프로그래밍 소스코드(Python)**
+- [피보나치 수열: 탑다운 다이나믹 프로그래밍 소스코드(Python)](Source/피보나치수열(탑다운).py)
 
   ```python
   # 한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 리스트 초기화
@@ -864,7 +833,7 @@
   print(fibo(99))
   ```
 
-- **피보나치 수열: 보텀업 다이나믹 프로그래밍 소스코드(Python)**
+- [피보나치 수열: 보텀업 다이나믹 프로그래밍 소스코드(Python)](Source/피보나치수열(보텀업).py)
 
   ```python
   # 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
@@ -996,7 +965,7 @@
   - 다익스트라 알고리즘을 수행한 뒤에 <u>테이블에 각 노드까지의 최단 거리 정보가 저장</u>됩니다.
     -  완벽한 형태의 최단 경로를 구하려면 소스코드에 추가적인 기능을 더 넣어야 합니다.
 
-- **다익스트라 알고리즘: 간단한 구현 방법**
+- [다익스트라 알고리즘: 간단한 구현 방법](Source/다익스트라(간단한구현).py)
   - 단계마다 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드를 선택하기 위해 **매 단계마다 1차원 테이블의 모든 원소를 확인(순차 탐색)** 합니다.
 
   ```python
@@ -1092,7 +1061,7 @@
 | 리스트               | O(1)      | O(N)      |
 | 힙(Heap)             | O(logN)   | O(logN)   |
 
-- **힙 라이브러리 사용 예제: 최소 힙**
+- [힙 라이브러리 사용 예제: 최소 힙](Source/최소힙.py)
 
   ```python
   import heapq
@@ -1114,7 +1083,7 @@
   print(result)
   ```
 
-- **힙 라이브러리 사용 예제: 최대 힙**
+- [힙 라이브러리 사용 예제: 최대 힙](Source/최힙.py
 
   ```python
   import heapq
@@ -1177,7 +1146,7 @@
 
   - **[Step 8]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
   
-- **다익스트라 알고리즘: 개선된 구현 방법 (Python)**
+- [다익스트라 알고리즘: 개선된 구현 방법 (Python)](Source/다익스트라(개선된구현).py)
 - **다익스트라 알고리즘: 개선된 구현 방법 성능 분석**
   - 힙 자료구조를 이용하는 다익스트라 알고리즘의 시간 복잡도는 O(ElogV)입니다.
   - 노드를 하나씩 꺼내 검사하는 반복문(while문)은 노드의 개수 V 이상의 횟수로는 처리되지 않습니다.
@@ -1230,7 +1199,7 @@
 
     ![image-20201020112708334](https://user-images.githubusercontent.com/45402031/98187779-0adf0000-1f55-11eb-9765-f74c3e2d3a80.png)
 
-- **플로이드 워셜 알고리즘**
+- [플로이드 워셜 알고리즘](Source/플로이드워셜.py)
 
   ```python
   INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
@@ -1347,51 +1316,6 @@
 
   - 다음 예시에서 노드 3의 루트를 찾기 위해서는 노드 2를 거쳐 노드 1에 접근해야 합니다.
 
-- **서로소 집합 자료구조: 기본적인 구현 방법 (Python)**
-
-  ```python
-  # 특정 원소가 속한 집합을 찾기
-  def find_parent(parent, x):
-      # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
-      if parent[x] != x:
-          return find_parent(parent, parent[x])
-      return x
-  
-  # 두 원소가 속한 집합을 합치기
-  def union_parent(parent, a, b):
-      a = find_parent(parent, a)
-      b = find_parent(parent, b)
-      if a < b:
-          parent[b] = a
-      else:
-          parent[a] = b
-  
-  # 노드의 개수와 간선(Union 연산)의 개수 입력 받기
-  v, e = map(int, input().split())
-  parent = [0] * (v + 1) # 부모 테이블 초기화하기
-  
-  # 부모 테이블상에서, 부모를 자기 자신으로 초기화
-  for i in range(1, v + 1):
-      parent[i] = i
-  
-  # Union 연산을 각각 수행
-  for i in range(e):
-      a, b = map(int, input().split())
-      union_parent(parent, a, b)
-  
-  # 각 원소가 속한 집합 출력하기
-  print('각 원소가 속한 집합: ', end='')
-  for i in range(1, v + 1):
-      print(find_parent(parent, i), end=' ')
-  
-  print()
-  
-  # 부모 테이블 내용 출력하기
-  print('부모 테이블: ', end='')
-  for i in range(1, v + 1):
-      print(parent[i], end=' ')
-  ```
-
 - **서로소 집합 자료구조: 기본적인 구현 방법의 문제점**
 
   - 합집합(Union) 연산이 편향되게 이루어지는 경우 찾기(Find) 함수가 비효율적으로 동작합니다.
@@ -1427,49 +1351,9 @@
     ![image-20201020134000401](https://user-images.githubusercontent.com/45402031/98188226-f94a2800-1f55-11eb-985d-9266b39a36d7.png)
 
   - 기본적인 방법에 비하여 시간 복잡도가 개선됩니다.
+  
+- [서로소 집합 자료구조 소스코드](Source/서로소집합자료구조.py)
 
-  ```python
-  # 특정 원소가 속한 집합을 찾기
-  def find_parent(parent, x):
-      # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
-      if parent[x] != x:
-          parent[x] = find_parent(parent, parent[x])
-      return parent[x]
-  
-  # 두 원소가 속한 집합을 합치기
-  def union_parent(parent, a, b):
-      a = find_parent(parent, a)
-      b = find_parent(parent, b)
-      if a < b:
-          parent[b] = a
-      else:
-          parent[a] = b
-  
-  # 노드의 개수와 간선(Union 연산)의 개수 입력 받기
-  v, e = map(int, input().split())
-  parent = [0] * (v + 1) # 부모 테이블 초기화하기
-  
-  # 부모 테이블상에서, 부모를 자기 자신으로 초기화
-  for i in range(1, v + 1):
-      parent[i] = i
-  
-  # Union 연산을 각각 수행
-  for i in range(e):
-      a, b = map(int, input().split())
-      union_parent(parent, a, b)
-  
-  # 각 원소가 속한 집합 출력하기
-  print('각 원소가 속한 집합: ', end='')
-  for i in range(1, v + 1):
-      print(find_parent(parent, i), end=' ')
-  
-  print()
-  
-  # 부모 테이블 내용 출력하기
-  print('부모 테이블: ', end='')
-  for i in range(1,
-      print(parent[i], end=' ')
-  ```
 
 #### 서로소 집합을 활용한 사이클 판별
 
@@ -1505,7 +1389,7 @@
 
     ![image-20201020135337493](https://user-images.githubusercontent.com/45402031/98188380-4201e100-1f56-11eb-9080-0c4c83bf2da9.png)
 
-- **서로소 집합을 활용한 사이클 판별**
+- [서로소 집합을 활용한 사이클 판별](Source/서로소집합을활용한사이클판별.py)
 
   ```python
   # 특정 원소가 속한 집합을 찾기
@@ -1636,7 +1520,7 @@
 
     ![image-20201020204152942](https://user-images.githubusercontent.com/45402031/98188786-061b4b80-1f57-11eb-888b-5b8060337b2c.png)
 
-- **크루스칼 알고리즘 (Python)**
+- [크루스칼 알고리즘 (Python)](Source/크루스칼알고리즘.py)
 
   ```python
   # 특정 원소가 속한 집합을 찾기
@@ -1785,7 +1669,7 @@
     - 사이클에 포함된 원소 중에서 어떠한 원소도 큐에 들어가지 못합니다.
   - 스택을 활용한 DFS를 이용해 위상 정렬을 수행할 수도 있습니다.
 
-- **위상 정렬 알고리즘 (Python)**
+- [위상 정렬 알고리즘 (Python)](Source/위상정렬알고리즘.py)
 
   ```python
   from collections import deque
@@ -1863,7 +1747,7 @@
   - 따라서 우리는 특정한 자연수의 모든 약수를 찾을 때 <u>가운데 약수(제곱근)까지만 확인</u>하면 됩니다.
     - 예를 들어 16이 2로 나누어떨어진다는 것을 8로도 나누어떨어진다는 것을 의미합니다.
 
-- **소수의 판별: 개선된 알고리즘(Python)**
+- [소수의 판별: 개선된 알고리즘(Python)](Source/소수의판별.py)
 
   ```python
   import math
@@ -1909,7 +1793,7 @@
   - **[Step 3]** 아직 처리하지 않은 가장 작은 수 5를 제외한 5의 배수는 모두 제거합니다.
   - **[Step 4]** 마찬가지의 과정을 반복했을 때 최종적인 결과는 다음과 같습니다.
 
-- **에라토스테네스 체 알고리즘 (Python)**
+- [에라토스테네스 체 알고리즘 (Python)](Source/에라토스테네스의체.py)
 
   ```python
   import math
@@ -2032,7 +1916,7 @@
 
     ![image-20201021123554464](https://user-images.githubusercontent.com/45402031/98189344-213a8b00-1f58-11eb-8f79-9d72bdf7e391.png)
 
-- **특정한 합을 가지는 부분 연속 수열 찾기: 코드 예시 (Python)**
+- [특정한 합을 가지는 부분 연속 수열 찾기: 코드 예시 (Python)](Source/특정한합을가지는부분연속수열찾기.py)
 
   ```python
   n = 5 # 데이터의 개수 N
