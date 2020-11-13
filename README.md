@@ -278,7 +278,7 @@
 
 <img src="https://user-images.githubusercontent.com/45402031/96075853-ee681e80-0ee6-11eb-9602-3bf16cfbe937.png" alt="image-20201015001153248" style="zoom:67%;" />
 
-- [DFS 소스코드 예제 (Python)](Source/DFS소스코드.py)
+- [**DFS 소스코드 예제 (Python)**](Source/DFS소스코드.py)
   
 
 #### BFS
@@ -295,49 +295,7 @@
   ![image-20201015002844846](https://user-images.githubusercontent.com/45402031/96076011-561e6980-0ee7-11eb-8aa1-5041f309a272.png)
 
 
-- [BFS 소스코드 예제 (Python)](Source/BFS소스코드.py)
-
-  ```python
-  from collections import deque
-  
-  # BFS 메서드 정의
-  def bfs(graph, start, visited):
-      # 큐(Queue) 구현을 위해 deque 라이브러리 사용
-      queue = deque([start])
-      # 현재 노드를 방문 처리
-      visited[start] = True
-      # 큐가 빌 때까지 반복
-      while queue:
-          # 큐에서 하나의 원소를 뽑아 출력하기
-          v =  queue.popleft()
-          print(v, end = ' ')
-          # 아직 방문하지 않은 인접한 원소들을 큐에 삽입
-          for i in graph[v]:
-              if not visited[i]:
-                  queue.append(i)
-                  visited[i] = True
-                  
-  # 각 노드가 연결된 정보를 표현 (2차원 리스트)
-  graph = [
-      [],
-      [2, 3, 8],
-      [1, 7],
-      [1, 4, 5],
-      [3, 5],
-      [3, 4],
-      [7],
-      [2, 6, 8],
-      [1, 7]
-  ]
-  
-  # 각 노드가 방문된 정보를 표현 (1차원 리스트)
-  visited = [False] * 9
-  
-  # 정의된 BFS 함수 호출
-  bfs(graph, 1, visited)  
-  ```
-
-
+- [**BFS 소스코드 예제 (Python)**](Source/BFS소스코드.py)
 
 
 ## 정렬 알고리즘
@@ -623,67 +581,10 @@
     - 3단계를 거치면 4개가량의 데이터만 남습니다.
   - 다시 말해 이진 탐색은 탐색 범위를 절반씩 줄이며, 시간 복잡도는 **O(logN)**을 보장합니다.
 
-- [이진 탐색 소스코드: 재귀적 구현 (Python)](Source/이진탐색소스코드(재귀).py)
+- [**이진 탐색 소스코드: 재귀적 구현 (Python)**](Source/이진탐색소스코드(재귀).py)
 
-  ```python
-  # 이진 탐색 소스코드 구현 (재귀 함수)
-  def binary_search(array, target, start, end):
-      if start > end:
-          return None
-      mid = (start + end) // 2
-      # 찾은 경우 중간점 인덱스 반환
-      if array[mid] == target:
-          return mid
-      # 중간점의 값보다 찾고자 하는 값이 작은 경우 왼쪽 확인
-      elif array[mid] > target:
-          return binary_search(array, target, start, mid - 1)
-      # 중간점의 값보다 찾고자 하는 값이 큰 경우 오른쪽 확인
-      else:
-          return binary_search(array, target, mid + 1, end)
-  
-  # n(원소의 개수)과 target(찾고자 하는 값)을 입력 받기
-  n, target = list(map(int, input().split()))
-  # 전체 원소 입력 받기
-  array = list(map(int, input().split()))
-  
-  # 이진 탐색 수행 결과 출력
-  result = binary_search(array, target, 0, n - 1)
-  if result == None:
-      print("원소가 존재하지 않습니다.")
-  else:
-      print(result + 1)
-  ```
+- [**이진 탐색 소스코드: 반복문 구현 (Python)**](Source/이진탐색소스코드(반복문).py)
 
-- [이진 탐색 소스코드: 반복문 구현 (Python)](Source/이진탐색소스코드(반복문).py)
-
-  ```python
-  # 이진 탐색 소스코드 구현 (반복문)
-  def binary_search(array, target, start, end):
-      while start <= end:
-          mid = (start + end) // 2
-          # 찾은 경우 중간점 인덱스 반환
-          if array[mid] == target:
-              return mid
-          # 중간점의 값보다 찾고자 하는 값이 작은 경우 왼쪽 확인
-          elif array[mid] > target:
-              end = mid - 1
-          # 중간점의 값보다 찾고자 하는 값이 큰 경우 오른쪽 확인
-          else:
-              start = mid + 1
-      return None
-  
-  # n(원소의 개수)과 target(찾고자 하는 값)을 입력 받기
-  n, target = list(map(int, input().split()))
-  # 전체 원소 입력 받기
-  array = list(map(int, input().split()))
-  
-  # 이진 탐색 수행 결과 출력
-  result = binary_search(array, target, 0, n - 1)
-  if result == None:
-      print("원소가 존재하지 않습니다.")
-  else:
-      print(result + 1)
-  ```
 
 #### 파이썬 이진 탐색 라이브러리
 
@@ -693,26 +594,8 @@
 
   ![image-20201016140702045](https://user-images.githubusercontent.com/45402031/97035621-90e86780-15a1-11eb-99a9-bf3d92b7b0b2.png)
 
-- [값이 특정 범위에 속하는 데이터 개수 구하기](Source/이진탐색라이브러리.py)
+- [**값이 특정 범위에 속하는 데이터 개수 구하기**](Source/이진탐색라이브러리.py)
 
-  ```python
-  from bisect import bisect_left, bisect_right
-  
-  # 값이 [left_value, right_value]인 데이터의 개수를 반환하는 함수
-  def count_by_range(a, left_value, right_value):
-      right_index = bisect_right(a, right_value)
-      left_index = bisect_left(a, left_value)
-      return right_index - left_index
-  
-  # 배열 선언
-  a = [1, 2, 3, 3, 3, 3, 4, 4, 8, 9]
-  
-  # 값이 4인 데이터 개수 출력
-  print(count_by_range(a, 4, 4))
-  
-  # 값이 [-1, 3]의 범위에 있는 데이터 개수 출력
-  print(count_by_range(a, -1, 3))
-  ```
 
 #### 파라메트릭 서치
 
@@ -812,44 +695,9 @@
     (엄밀히 말하면 서로 다른 개념)
   - 한 번 계산된 결과를 담아 놓기만 하고 다이나믹 프로그래밍을 위해 활용하지 않을 수도 있습니다.
 
-- [피보나치 수열: 탑다운 다이나믹 프로그래밍 소스코드(Python)](Source/피보나치수열(탑다운).py)
+- [**피보나치 수열: 탑다운 다이나믹 프로그래밍 소스코드(Python)**](Source/피보나치수열(탑다운).py)
 
-  ```python
-  # 한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 리스트 초기화
-  d = [0] * 100
-  
-  # 피보나치 함수(Fibonacci Function)를 재귀함수로 구현 (탑다운 다이나믹 프로그래밍)
-  def fibo(x):
-      # 종료 조건(1 혹은 2일 때 1을 반환)
-      if x == 1 or x == 2:
-          return 1
-      # 이미 계산한 적 있는 문제라면 그대로 반환
-      if d[x] != 0:
-          return d[x]
-      # 아직 계산하지 않은 문제라면 점화식에 따라서 피보나치 결과 반환
-      d[x] = fibo(x - 1) + fibo(x - 2)
-      return d[x]
-  
-  print(fibo(99))
-  ```
-
-- [피보나치 수열: 보텀업 다이나믹 프로그래밍 소스코드(Python)](Source/피보나치수열(보텀업).py)
-
-  ```python
-  # 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
-  d = [0] * 100
-  
-  # 첫 번째 피보나치 수와 두 번째 피보나치 수는 1
-  d[1] = 1
-  d[2] = 1
-  n = 99
-  
-  # 피보나치 함수(Fibonacci Function) 반복문으로 구현(보텀업 다이나믹 프로그래밍)
-  for i in range(3, n + 1):
-      d[i] = d[i - 1] + d[i - 2]
-  
-  print(d[n])
-  ```
+- [**피보나치 수열: 보텀업 다이나믹 프로그래밍 소스코드(Python)**](Source/피보나치수열(보텀업).py)
 
 - **피보나치 수열: 메모이제이션 동작 분석**
   - 이미 계산된 결과를 메모리에 저장하면 다음과 같이 색칠된 노드만 처리할 것을 기대할 수 있습니다.
@@ -965,71 +813,8 @@
   - 다익스트라 알고리즘을 수행한 뒤에 <u>테이블에 각 노드까지의 최단 거리 정보가 저장</u>됩니다.
     -  완벽한 형태의 최단 경로를 구하려면 소스코드에 추가적인 기능을 더 넣어야 합니다.
 
-- [다익스트라 알고리즘: 간단한 구현 방법](Source/다익스트라(간단한구현).py)
+- [**다익스트라 알고리즘: 간단한 구현 방법**](Source/다익스트라(간단한구현).py)
   - 단계마다 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드를 선택하기 위해 **매 단계마다 1차원 테이블의 모든 원소를 확인(순차 탐색)** 합니다.
-
-  ```python
-  import sys
-  input = sys.stdin.readline
-  INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
-  
-  # 노드의 개수, 간선의 개수를 입력받기
-  n, m = map(int, input().split())
-  # 시작 노드 번호를 입력받기
-  start = int(input())
-  # 각 노드에 연결되어 있는 노드에 대한 정보를 담는 리스트를 만들기
-  graph = [[] for i in range(n + 1)]
-  # 방문한 적이 있는지 체크하는 목적의 리스트를 만들기
-  visited = [False] * (n + 1)
-  # 최단 거리 테이블을 모두 무한으로 초기화
-  distance = [INF] * (n + 1)
-  
-  # 모든 간선 정보를 입력받기
-  for _ in range(m):
-      a, b, c = map(int, input().split())
-      # a번 노드에서 b번 노드로 가는 비용이 c라는 의미
-      graph[a].append((b, c))
-  
-  # 방문하지 않은 노드 중에서, 가장 최단 거리가 짧은 노드의 번호를 반환
-  def get_smallest_node():
-      min_value = INF
-      index = 0 # 가장 최단 거리가 짧은 노드(인덱스)
-      for i in range(1, n + 1):
-          if distance[i] < min_value and not visited[i]:
-              min_value = distance[i]
-              index = i
-      return index
-  
-  def dijkstra(start):
-      # 시작 노드에 대해서 초기화
-      distance[start] = 0
-      visited[start] = True
-      for j in graph[start]:
-          distance[j[0]] = j[1]
-      # 시작 노드를 제외한 전체 n - 1개의 노드에 대해 반복
-      for i in range(n - 1):
-          # 현재 최단 거리가 가장 짧은 노드를 꺼내서, 방문 처리
-          now = get_smallest_node()
-          visited[now] = True
-          # 현재 노드와 연결된 다른 노드를 확인
-          for j in graph[now]:
-              cost = distance[now] + j[1]
-              # 현재 노드를 거쳐서 다른 노드로 이동하는 거리가 더 짧은 경우
-              if cost < distance[j[0]]:
-                  distance[j[0]] = cost
-  
-  # 다익스트라 알고리즘을 수행
-  dijkstra(start)
-  
-  # 모든 노드로 가기 위한 최단 거리를 출력
-  for i in range(1, n + 1):
-      # 도달할 수 없는 경우, 무한(INFINITY)이라고 출력
-      if distance[i] == INF:
-          print("INFINITY")
-      # 도달할 수 있는 경우 거리를 출력
-      else:
-          print(distance[i])
-  ```
 
 - **다익스트라 알고리즘: 간단한 구현 방법 성능 분석**
   - 총 O(V)번에 걸쳐서 최단 거리가 가장 짧은 노드를 매번 선형 탐색해야 합니다.
@@ -1061,45 +846,9 @@
 | 리스트               | O(1)      | O(N)      |
 | 힙(Heap)             | O(logN)   | O(logN)   |
 
-- [힙 라이브러리 사용 예제: 최소 힙](Source/최소힙.py)
+- [**힙 라이브러리 사용 예제: 최소 힙**](Source/최소힙.py)
 
-  ```python
-  import heapq
-  
-  # 오름차순 힙 정렬(Heap Sort)
-  def heapsort(iterable):
-      h = []
-      result = []
-      # 모든 원소를 차례대로 힙에 삽입
-      for value in iterable:
-          heapq.heappush(h, value)
-      # 힙에 삽입된 모든 원소를 차례대로 꺼내어 담기
-      for i in range(len(h)):
-          result.append(heapq.heappop(h))
-      
-      return result
-  
-  result = heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
-  print(result)
-  ```
-
-- [힙 라이브러리 사용 예제: 최대 힙](Source/최힙.py
-
-  ```python
-  import heapq
-  
-  # 내림차순 힙 정렬(Heap Sort)
-  def heapsort(iterable):
-      h = []
-      result = []
-      # 모든 원소를 차례대로 힙에 삽입
-      for value in iterable:
-          heapq.heappush(h, -value)
-      # 힙에 삽입된 모든 원소를 차례대로 꺼내어 담기
-      for i in range(len(h)):
-          result.append(-heapq.heappop(h))
-      
-  ```
+- [**힙 라이브러리 사용 예제: 최대 힙**](Source/최대힙.py)
 
 #### 다익스트라 알고리즘: 개선된 구현 방법
 
@@ -1146,7 +895,8 @@
 
   - **[Step 8]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
   
-- [다익스트라 알고리즘: 개선된 구현 방법 (Python)](Source/다익스트라(개선된구현).py)
+- [**다익스트라 알고리즘: 개선된 구현 방법 (Python)**](Source/다익스트라(개선된구현).py)
+
 - **다익스트라 알고리즘: 개선된 구현 방법 성능 분석**
   - 힙 자료구조를 이용하는 다익스트라 알고리즘의 시간 복잡도는 O(ElogV)입니다.
   - 노드를 하나씩 꺼내 검사하는 반복문(while문)은 노드의 개수 V 이상의 횟수로는 처리되지 않습니다.
@@ -1199,46 +949,7 @@
 
     ![image-20201020112708334](https://user-images.githubusercontent.com/45402031/98187779-0adf0000-1f55-11eb-9765-f74c3e2d3a80.png)
 
-- [플로이드 워셜 알고리즘](Source/플로이드워셜.py)
-
-  ```python
-  INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
-  
-  # 노드의 개수 및 간선의 개수를 입력받기
-  n = int(input())
-  m = int(input())
-  # 2차원 리스트(그래프 표현)를 만들고, 모든 값을 무한으로 초기화
-  graph = [[INF] * (n + 1) for _ in range(n + 1)]
-  
-  # 자기 자신에서 자기 자신으로 가는 비용은 0으로 초기화
-  for a in range(1, n + 1):
-      for b in range(1, n + 1):
-          if a == b:
-              graph[a][b] = 0
-  
-  # 각 간선에 대한 정보를 입력 받아, 그 값으로 초기화
-  for _ in range(m):
-      # A에서 B로 가는 비용은 C라고 설정
-      a, b, c = map(int, input().split())
-      graph[a][b] = c
-  
-  # 점화식에 따라 플로이드 워셜 알고리즘을 수행
-  for k in range(1, n + 1):
-      for a in range(1, n + 1):
-          for b in range(1, n + 1):
-              graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
-  
-  # 수행된 결과를 출력
-  for a in range(1, n + 1):
-      for b in range(1, n + 1):
-          # 도달할 수 없는 경우, 무한(INFINITY)이라고 출력
-          if graph[a][b] == 1e9:
-              print("INFINITY", end=" ")
-          # 도달할 수 있는 경우 거리를 출력
-          else:
-              print(graph[a][b], end=" ")
-      print()
-  ```
+- [**플로이드 워셜 알고리즘**](Source/플로이드워셜.py)
 
 - **플로이드 워셜 알고리즘 성능 분석**
   - 노드의 개수가 N개일 때 알고리즘상으로 N번의 단계를 수행합니다.
@@ -1352,7 +1063,7 @@
 
   - 기본적인 방법에 비하여 시간 복잡도가 개선됩니다.
   
-- [서로소 집합 자료구조 소스코드](Source/서로소집합자료구조.py)
+- [**서로소 집합 자료구조: 간단한 구현, 개선된 구현(Python)**](Source/서로소집합자료구조.py)
 
 
 #### 서로소 집합을 활용한 사이클 판별
@@ -1389,50 +1100,8 @@
 
     ![image-20201020135337493](https://user-images.githubusercontent.com/45402031/98188380-4201e100-1f56-11eb-9080-0c4c83bf2da9.png)
 
-- [서로소 집합을 활용한 사이클 판별](Source/서로소집합을활용한사이클판별.py)
+- [**서로소 집합을 활용한 사이클 판별**](Source/서로소집합을활용한사이클판별.py)
 
-  ```python
-  # 특정 원소가 속한 집합을 찾기
-  def find_parent(parent, x):
-      # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
-      if parent[x] != x:
-          parent[x] = find_parent(parent, parent[x])
-      return parent[x]
-  
-  # 두 원소가 속한 집합을 합치기
-  def union_parent(parent, a, b):
-      a = find_parent(parent, a)
-      b = find_parent(parent, b)
-      if a < b:
-          parent[b] = a
-      else:
-          parent[a] = b
-  
-  # 노드의 개수와 간선(Union 연산)의 개수 입력 받기
-  v, e = map(int, input().split())
-  parent = [0] * (v + 1) # 부모 테이블 초기화하기
-  
-  # 부모 테이블상에서, 부모를 자기 자신으로 초기화
-  for i in range(1, v + 1):
-      parent[i] = i
-  
-  cycle = False # 사이클 발생 여부
-  
-  for i in range(e):
-      a, b = map(int, input().split())
-      # 사이클이 발생한 경우 종료
-      if find_parent(parent, a) == find_parent(parent, b):
-          cycle = True
-          break
-      # 사이클이 발생하지 않았다면 합집합(Union) 연산 수행
-      else:
-          union_parent(parent, a, b)
-  
-  if cycle:
-      print("사이클이 발생했습니다.")
-  else:
-      print("사이클이 발생하지 않았습니다.")
-  ```
 
 #### 신장 트리
 
@@ -1520,56 +1189,7 @@
 
     ![image-20201020204152942](https://user-images.githubusercontent.com/45402031/98188786-061b4b80-1f57-11eb-888b-5b8060337b2c.png)
 
-- [크루스칼 알고리즘 (Python)](Source/크루스칼알고리즘.py)
-
-  ```python
-  # 특정 원소가 속한 집합을 찾기
-  def find_parent(parent, x):
-      # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
-      if parent[x] != x:
-          parent[x] = find_parent(parent, parent[x])
-      return parent[x]
-  
-  # 두 원소가 속한 집합을 합치기
-  def union_parent(parent, a, b):
-      a = find_parent(parent, a)
-      b = find_parent(parent, b)
-      if a < b:
-          parent[b] = a
-      else:
-          parent[a] = b
-  
-  # 노드의 개수와 간선(Union 연산)의 개수 입력 받기
-  v, e = map(int, input().split())
-  parent = [0] * (v + 1) # 부모 테이블 초기화하기
-  
-  # 모든 간선을 담을 리스트와, 최종 비용을 담을 변수
-  edges = []
-  result = 0
-  
-  # 부모 테이블상에서, 부모를 자기 자신으로 초기화
-  for i in range(1, v + 1):
-      parent[i] = i
-  
-  # 모든 간선에 대한 정보를 입력 받기
-  for _ in range(e):
-      a, b, cost = map(int, input().split())
-      # 비용순으로 정렬하기 위해서 튜플의 첫 번째 원소를 비용으로 설정
-      edges.append((cost, a, b))
-  
-  # 간선을 비용순으로 정렬
-  edges.sort()
-  
-  # 간선을 하나씩 확인하며
-  for edge in edges:
-      cost, a, b = edge
-      # 사이클이 발생하지 않는 경우에만 집합에 포함
-      if find_parent(parent, a) != find_parent(parent, b):
-          union_parent(parent, a, b)
-          result += cost
-  
-  print(result)
-  ```
+- [**크루스칼 알고리즘 (Python)**](Source/크루스칼알고리즘.py)
 
 - **크루스칼 알고리즘 성능 분석**
   - 크루스칼 알고리즘은 간선의 개수가 E개일 때, O(ElogE)의 시간 복잡도를 가집니다.
@@ -1669,53 +1289,7 @@
     - 사이클에 포함된 원소 중에서 어떠한 원소도 큐에 들어가지 못합니다.
   - 스택을 활용한 DFS를 이용해 위상 정렬을 수행할 수도 있습니다.
 
-- [위상 정렬 알고리즘 (Python)](Source/위상정렬알고리즘.py)
-
-  ```python
-  from collections import deque
-  
-  # 노드의 개수와 간선의 개수를 입력 받기
-  v, e = map(int, input().split())
-  # 모든 노드에 대한 진입차수는 0으로 초기화
-  indegree = [0] * (v + 1)
-  # 각 노드에 연결된 간선 정보를 담기 위한 연결 리스트 초기화
-  graph = [[] for i in range(v + 1)]
-  
-  # 방향 그래프의 모든 간선 정보를 입력 받기
-  for _ in range(e):
-      a, b = map(int, input().split())
-      graph[a].append(b) # 정점 A에서 B로 이동 가능
-      # 진입 차수를 1 증가
-      indegree[b] += 1
-  
-  # 위상 정렬 함수
-  def topology_sort():
-      result = [] # 알고리즘 수행 결과를 담을 리스트
-      q = deque() # 큐 기능을 위한 deque 라이브러리 사용
-  
-      # 처음 시작할 때는 진입차수가 0인 노드를 큐에 삽입
-      for i in range(1, v + 1):
-          if indegree[i] == 0:
-              q.append(i)
-  
-      # 큐가 빌 때까지 반복
-      while q:
-          # 큐에서 원소 꺼내기
-          now = q.popleft()
-          result.append(now)
-          # 해당 원소와 연결된 노드들의 진입차수에서 1 빼기
-          for i in graph[now]:
-              indegree[i] -= 1
-              # 새롭게 진입차수가 0이 되는 노드를 큐에 삽입
-              if indegree[i] == 0:
-                  q.append(i)
-  
-      # 위상 정렬을 수행한 결과 출력
-      for i in result:
-          print(i, end=' ')
-  
-  topology_sort()
-  ```
+- [**위상 정렬 알고리즘 (Python)**](Source/위상정렬알고리즘.py)
 
 - **위상 정렬 알고리즘 성능 분석**
   - 위상 정렬을 위해 차례대로 모든 노드를 확인하며 각 노드에서 나가는 간선을 차례대로 제거해야 합니다.
@@ -1747,23 +1321,7 @@
   - 따라서 우리는 특정한 자연수의 모든 약수를 찾을 때 <u>가운데 약수(제곱근)까지만 확인</u>하면 됩니다.
     - 예를 들어 16이 2로 나누어떨어진다는 것을 8로도 나누어떨어진다는 것을 의미합니다.
 
-- [소수의 판별: 개선된 알고리즘(Python)](Source/소수의판별.py)
-
-  ```python
-  import math
-  
-  # 소수 판별 함수
-  def is_prime_number(x):
-      # 2부터 x의 제곱근까지의 모든 수를 확인하며
-      for i in range(2, int(math.sqrt(x)) + 1):
-          # x가 해당 수로 나누어떨어진다면
-          if x % i == 0:
-              return False # 소수가 아님
-      return True # 소수임
-  
-  print(is_prime_number(4)) # 4는 소수가 아님
-  print(is_prime_number(7)) # 7은 소수임
-  ```
+- [**소수의 판별: 개선된 알고리즘(Python)**](Source/소수의판별.py)
 
 - **소수의 판별: 개선된 알고리즘 성능 분석**
   - 2부터 X의 제곱근(소수점 이하 무시)까지의 모든 자연수에 대하여 연산을 수행해야 합니다.
@@ -1793,28 +1351,7 @@
   - **[Step 3]** 아직 처리하지 않은 가장 작은 수 5를 제외한 5의 배수는 모두 제거합니다.
   - **[Step 4]** 마찬가지의 과정을 반복했을 때 최종적인 결과는 다음과 같습니다.
 
-- [에라토스테네스 체 알고리즘 (Python)](Source/에라토스테네스의체.py)
-
-  ```python
-  import math
-  
-  n = 1000 # 2부터 1,000까지의 모든 수에 대하여 소수 판별
-  array = [True for i in range(n + 1)] # 처음엔 모든 수가 소수(True)인 것으로 초기화
-  
-  # 에라토스테네스의 체 알고리즘 
-  for i in range(2, int(math.sqrt(n)) + 1): # 2부터 n의 제곱근까지의 모든 수를 확인하며
-      if array[i] == True: # i가 소수인 경우 (남은 수인 경우)
-          # i를 제외한 i의 모든 배수를 지우기
-          j = 2 
-          while i * j <= n:
-              array[i * j] = False
-              j += 1
-  
-  # 모든 소수 출력
-  for i in range(2, n + 1):
-      if array[i]:
-          print(i, end=' ')
-  ```
+- [**에라토스테네스 체 알고리즘 (Python)**](Source/에라토스테네스의체.py)
 
 - **에라토스테네스의 체 알고리즘 성능 분석**
   - 에라토스테네스의 체의 알고리즘의 시간 복잡도는 사실상 선형 시간에 가까울 정도로 매우 빠릅니다.
@@ -1916,30 +1453,8 @@
 
     ![image-20201021123554464](https://user-images.githubusercontent.com/45402031/98189344-213a8b00-1f58-11eb-8f79-9d72bdf7e391.png)
 
-- [특정한 합을 가지는 부분 연속 수열 찾기: 코드 예시 (Python)](Source/특정한합을가지는부분연속수열찾기.py)
+- [**특정한 합을 가지는 부분 연속 수열 찾기: 코드 예시 (Python)**](Source/특정한합을가지는부분연속수열찾기.py)
 
-  ```python
-  n = 5 # 데이터의 개수 N
-  m = 5 # 찾고자 하는 부분합 M
-  data = [1, 2, 3, 2, 5] # 전체 수열
-  
-  count = 0
-  interval_sum = 0
-  end = 0
-  
-  # start를 차례대로 증가시키며 반복
-  for start in range(n):
-      # end를 가능한 만큼 이동시키기
-      while interval_sum < m and end < n:
-          interval_sum += data[end]
-          end += 1
-      # 부분합이 m일 때 카운트 증가
-      if interval_sum == m:
-          count += 1
-      interval_sum -= data[start]
-  
-  print(count)
-  ```
 
 #### 구간 합 빠르게 계산하기
 
