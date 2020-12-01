@@ -14,6 +14,7 @@
   - [Zip](#zip)
 - [Conditional (조건문)](#conditional)
 - [Libraries (표준 라이브러리)](#libraries)
+- [진수 변환](#진수-변환)
 
 
 
@@ -96,6 +97,8 @@
   - `list1.remove(value)` : 특정 값을 지움
     (여러개의 값이 있는 경우 가장 앞에 있는 하나만 지워짐)
 
+  - `list1.pop(index)`: index에 있는 값을 뽑음 (index 생략 시 가장 마지막 값을 뽑음)
+    
   - `list1.count(value)` : 해당 값을 개수를 셈 
 
   - `list1.reverse()` : 리스트에 들어있는 요소들의 순서를 거꾸로 뒤집어줌
@@ -148,7 +151,9 @@
   - `del list1[ : end]` :  처음부터 end-1번째까지 삭제
   - `list1[1:3] = [77,88]` (더 많은/적은 개수로 변환도 가능)
 
-  
+- **리스트 간의 차집합은 list comprehension으로 구현**
+
+  - [x **for** x **in** a **if** x **not** **in** b]
 
 ## String
 
@@ -273,7 +278,7 @@
     - 'key' 값의 존재 여부 판단 방법
       - get 
         - `dict.get('key')`
-        - valu 값을 리턴하고 싶을 때는 get 사용 
+        - value 값을 리턴하고 싶을 때는 get 사용 
       - in: 
         - `'key' in dict`
         - 키 값이 있는지만 확인하고 싶을 때 in 사용
@@ -324,7 +329,7 @@
   - `k.discard(item)`: 집합 원소를 제거할 때 사용 (해당 원소가 없어도 에러 발생하지 않음) 
   - **기타 메소드**
     - `a.issubset(b)` : 부분집합 여부 확인
-    - `a.issuperset` : issubset과 반대. superset인지 확ㅇ니
+    - `a.issuperset(b)` : issubset과 반대. superset인지 확인
     - `a.isdisjoint(b)` : 교집합이 없으면 True, 있으면 False
 
 
@@ -675,6 +680,22 @@
   ```
 
 
+
+## 진수 변환
+
+- 파이썬은 기본 10진수이기 때문에 다른 진수는 아래와 같이 접두어가 붙음
+
+  - 2진수: 0b
+  - 8진수: 0o
+  - 16진수: 0x
+
+- **10진수에서 2진수, 8진수, 16진수 변환**
+
+  - bin(), oct(), hex() 내장 함수 사용 (결과는 전부 문자열 타입)
+    - 다른 진수 형태에서 다른 진수로 변환도 가능
+  - 다른 진수 형태에서 10진수로 변환할 때는 str() 사용
+
+  
 
 ### ■ Logical Operation
 
