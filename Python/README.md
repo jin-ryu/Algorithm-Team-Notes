@@ -184,7 +184,7 @@
   - `s.isdigit()`: 문자열이 숫자인지 아닌지 리턴
   - `s.replace(sub, change, [count])`: 부분 문자열을 찾아 바꿔줌 (count는 선택항목)
     - s에 바로 반영되는 것이 아니므로  s=s.replace() 이런 형태로 사용해야 한다
-- `s.lower()`: 대문자를 소문자로 변환
+  - `s.lower()`: 대문자를 소문자로 변환
   - `s.upper()`: 소문자를 대문자로 변환
   - `s.capitalize()`:  문자열의 첫 문자를 대문자로 변환
   
