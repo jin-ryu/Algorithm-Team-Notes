@@ -12,7 +12,6 @@ def dfs(graph, v, visited):
 # 스택 활용한 DFS 메소드 정의
 def dfs_stack(graph, visited):
     stack = [1] # 1번 노드부터 탐색
-    visited[1] = True
 
     while stack:
         v = stack.pop()
