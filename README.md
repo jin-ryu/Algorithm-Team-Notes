@@ -284,7 +284,8 @@
   1. 탐색 시작 노드를 스택에 삽입하고 방문 처리를 합니다.
   2. 스택의 최상단 노드에 방문하지 않은 인접한 노드가 하나라도 있으면 그 노드를 스택에 넣고 방문 처리합니다. 방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼냅니다.
   3. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복합니다.
-![image-20201015001153248](https://user-images.githubusercontent.com/45402031/96075853-ee681e80-0ee6-11eb-9602-3bf16cfbe937.png){: width="50%" height="50%"}
+
+<img src="https://user-images.githubusercontent.com/45402031/96075853-ee681e80-0ee6-11eb-9602-3bf16cfbe937.png" width="40%">
 
 - [**DFS 소스코드 예제 (Python)**](Source/DFS소스코드.py)
   
