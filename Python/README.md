@@ -1,6 +1,6 @@
 # Python Introduction
 💁 유찌니의 파이썬 노트
-Python 3.7 공식 문서: https://docs.python.org/3.7/
+##### Python 3.7 공식 문서: https://docs.python.org/3.7/
 
 - [Number (숫자 자료형)](#number)
 - [List (리스트)](#list)
