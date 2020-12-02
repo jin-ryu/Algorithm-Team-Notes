@@ -1592,7 +1592,7 @@
     - 양수: 8bit x 4의 이진수로 표현
     - 음수: 양수에 보수를 취해서 + 1
 
-  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816274-186ea380-3489-11eb-9497-871598493fa4.pngg" width="40%"></p>
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816274-186ea380-3489-11eb-9497-871598493fa4.png" width="40%"></p>
 
 - **0이 아닌 마지막 비트를 찾는 법**
 
