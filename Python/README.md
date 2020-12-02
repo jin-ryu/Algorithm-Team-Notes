@@ -291,16 +291,14 @@
     
     - value 값이 최대인 key 구하기
     
-        - ```python
+    ```python
           def f1(key):
               return dict[key]
           
           key_max = max(dict.keys(), key=f1)
-          ```
-    ```
-        
+    ```        
         - `key_max = max(dict.keys(), key=(lambda k: dict[k])`
-    ```
+    
     
   - **List vs. Dictionary**
     <p align="center"><img src="https://user-images.githubusercontent.com/45402031/88435926-2f97e780-ce3e-11ea-8e1d-8d6ce975b1e0.png" width="50%"></p>
