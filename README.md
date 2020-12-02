@@ -301,8 +301,7 @@
 
 - 특정 조건에서의 **최단경로 문제**를 해결하기 위해 효과적으로 사용될 수 있음
 
-  ![image-20201015002844846](https://user-images.githubusercontent.com/45402031/96076011-561e6980-0ee7-11eb-8aa1-5041f309a272.png)
-
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/96076011-561e6980-0ee7-11eb-8aa1-5041f309a272.png" width="40%"></p>
 
 - [**BFS 소스코드 예제 (Python)**](Source/BFS소스코드.py)
 
@@ -512,7 +511,7 @@
 
 - bisect_right(a, x): 정렬된 순서를 유지하면서 배열 a에 x를 삽입할 가장 오른쪽 인덱스를 반환
 
-  ![image-20201016140702045](https://user-images.githubusercontent.com/45402031/97035621-90e86780-15a1-11eb-99a9-bf3d92b7b0b2.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/97035621-90e86780-15a1-11eb-99a9-bf3d92b7b0b2.png" width="40%"></p>
 
 - [**값이 특정 범위에 속하는 데이터 개수 구하기**](Source/이진탐색라이브러리.py)
 
@@ -579,7 +578,7 @@
   - 단순 재귀 함수로 피보나치 수열을 해결하면 지수 시간 복잡도를 가지게 됩니다.
   - 다음과 같이 f(2)가 <u>여러 번 호출</u>되는 것을 확인할 수 있습니다. (**중복되는 부분 문제**)
 
-  ![image-20201019202843158](https://user-images.githubusercontent.com/45402031/97035751-c1c89c80-15a1-11eb-9906-370c76cae2cc.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/97035751-c1c89c80-15a1-11eb-9906-370c76cae2cc.png" width="40%"></p>
 
 - **피보나치 수열의 시간 복잡도 분석**
 
@@ -621,8 +620,7 @@
 
 - **피보나치 수열: 메모이제이션 동작 분석**
   - 이미 계산된 결과를 메모리에 저장하면 다음과 같이 색칠된 노드만 처리할 것을 기대할 수 있습니다.
-    
-    ![image-20201019212832088](https://user-images.githubusercontent.com/45402031/97035809-d9078a00-15a1-11eb-8b50-7a34c22485da.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/97035809-d9078a00-15a1-11eb-8b50-7a34c22485da.png" width="40%"></p>    
     
   -  메모이제이션을 이용하는 경우 피보나치 수열 함수의 시간 복잡도는 **O(N)**입니다.
 
@@ -642,7 +640,7 @@
   - 한 번 기준 원소(Pivot)가 자리를 변경해서 자리를 잡으면 그 기준 원소의 위치는 바뀌지 않습니다.
   - 분할 이후 해당 피벗을 다시 처리해야하는 부분 문제를 호출하지 않습니다.
 
-  ![image-20201019213342546](https://user-images.githubusercontent.com/45402031/97035876-f2a8d180-15a1-11eb-8f3d-5fd8422c0d03.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/97035876-f2a8d180-15a1-11eb-8f3d-5fd8422c0d03.png" width="40%"></p>   
 
 #### 다이나믹 프로그래밍 문제에 접근하는 방법
 
@@ -665,7 +663,7 @@
   - 각 지점은 그래프에서 **노드**로 표현
   - 지점 간 연결된 도로는 그래프에서 **간선**으로 표현
 
-![image-20201020015518056](https://user-images.githubusercontent.com/45402031/97035989-1cfa8f00-15a2-11eb-9ae6-3fbb9eb6d883.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/97035989-1cfa8f00-15a2-11eb-9ae6-3fbb9eb6d883.png" width="40%"></p>  
 
 #### 다익스트라 알고리즘
 
@@ -693,19 +691,20 @@
 - **다익스트라 알고리즘: 동작 과정 살펴보기**
 
   - **[초기 상태]** 그래프를 준비하고 출발 노드를 설정합니다.
-
-    ![image-20201020020727476](https://user-images.githubusercontent.com/45402031/97036197-72cf3700-15a2-11eb-8a82-ecb57f2e74f0.png)
+  
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/97036197-72cf3700-15a2-11eb-8a82-ecb57f2e74f0.png" width="40%"></p>  
 
   - **[Step 1]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **1번** 노드를 처리합니다.
-
-    ![image-20201020020850941](https://user-images.githubusercontent.com/45402031/97036243-837fad00-15a2-11eb-9686-678b17677e21.png)
+  
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/97036243-837fad00-15a2-11eb-9686-678b17677e21.png" width="40%"></p>  
 
   - **[Step 2]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **4번** 노드를 처리합니다.
-    ![image-20201020021023417](https://user-images.githubusercontent.com/45402031/97036298-94c8b980-15a2-11eb-9ac7-308593062782.png)
+  
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/97036298-94c8b980-15a2-11eb-9ac7-308593062782.png" width="40%"></p>  
 
   - **[Step 3]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **2번** 노드를 처리합니다.
-
-    ![image-20201020021026823](https://user-images.githubusercontent.com/45402031/97036345-a7db8980-15a2-11eb-9f34-48bc7e08ac1f.png)
+  
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/97036345-a7db8980-15a2-11eb-9f34-48bc7e08ac1f.png" width="40%"></p>  
 
     - 일반적으로 최단 거리가 같을 때는 앞에 있는 노드를 우선적으로 선택
     - 이미 방문처리가 된 노드를 무시하게 구현해도 됨
@@ -713,15 +712,15 @@
 
   - **[Step 4]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **5번** 노드를 처리합니다.
 
-    ![image-20201020021235863](https://user-images.githubusercontent.com/45402031/97036372-b4f87880-15a2-11eb-97a6-b05ea53edeb0.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/97036372-b4f87880-15a2-11eb-97a6-b05ea53edeb0.png" width="40%"></p> 
 
   - **[Step 5]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **3번** 노드를 처리합니다.
 
-    ![image-20201020021646376](https://user-images.githubusercontent.com/45402031/98187292-edf5fd00-1f53-11eb-872e-fae3fbb20062.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187292-edf5fd00-1f53-11eb-872e-fae3fbb20062.png" width="40%"></p> 
 
   - **[Step 6]** 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드인 **6번** 노드를 처리합니다.
 
-    ![image-20201020021721219](https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png" width="40%"></p> 
 
     - 다른 노드까지의 최단거리는 더 이상 바뀌지 않기 때문에, 마지막 노드는 처리하지 않아**도 결과가 동일**
 
@@ -784,27 +783,25 @@
 
   - **[초기 상태]** 그래프를 준비하고 출발 노드를 설정하여 우선순위 큐에 삽입합니다.
 
-    ![image-20201020030510982](https://user-images.githubusercontent.com/45402031/98187403-357c8900-1f54-11eb-8392-6948f433c3b2.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187403-357c8900-1f54-11eb-8392-6948f433c3b2.png" width="40%"></p>
 
   - **[Step 1]** 우선순위 큐에서 원소를 꺼냅니다. **1번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    ![image-20201020030844243](https://user-images.githubusercontent.com/45402031/98187439-475e2c00-1f54-11eb-9beb-6ec6a3acf13c.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187439-475e2c00-1f54-11eb-9beb-6ec6a3acf13c.png" width="40%"></p>
 
   - **[Step 2]** 우선순위 큐에서 원소를 꺼냅니다. **4번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    ![image-20201020031010043](https://user-images.githubusercontent.com/45402031/98187460-57760b80-1f54-11eb-96a4-1a515a5ba55c.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187460-57760b80-1f54-11eb-96a4-1a515a5ba55c.png" width="40%"></p>
 
   - **[Step 3]** 우선순위 큐에서 원소를 꺼냅니다. **2번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    ![image-20201020031143042](https://user-images.githubusercontent.com/45402031/98187488-6492fa80-1f54-11eb-8a69-6ecada9eab23.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187488-6492fa80-1f54-11eb-8a69-6ecada9eab23.png" width="40%"></p>
 
   - **[Step 4]** 우선순위 큐에서 원소를 꺼냅니다. **5번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
-
-    ![image-20201020031303368](https://user-images.githubusercontent.com/45402031/98187563-8d1af480-1f54-11eb-967a-2567d05bd822.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png" width="40%"></p>
 
   - **[Step 5]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
-
-    ![image-20201020031339374](https://user-images.githubusercontent.com/45402031/98187587-9e640100-1f54-11eb-8233-ac4c9f3e1713.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187587-9e640100-1f54-11eb-8233-ac4c9f3e1713.png" width="40%"></p>
 
   - **[Step 6]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
 
@@ -812,7 +809,7 @@
 
   - **[Step 7]** 우선순위 큐에서 원소를 꺼냅니다. **6번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
-    ![image-20201020031615356](https://user-images.githubusercontent.com/45402031/98187611-b045a400-1f54-11eb-8e66-40fd0bb6e235.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187611-b045a400-1f54-11eb-8e66-40fd0bb6e235.png" width="40%"></p>
 
   - **[Step 8]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
   
@@ -852,23 +849,23 @@
 
   - **[초기 상태]** 그래프를 준비하고 최단 거리 테이블을 초기화합니다.
 
-    ![image-20201020112403045](https://user-images.githubusercontent.com/45402031/98187654-ca7f8200-1f54-11eb-8e4c-078774313082.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187654-ca7f8200-1f54-11eb-8e4c-078774313082.png" width="40%"></p>
 
   - **[Step 1]** **1번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    ![image-20201020112458810](https://user-images.githubusercontent.com/45402031/98187686-db2ff800-1f54-11eb-8810-ce441da2404e.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187686-db2ff800-1f54-11eb-8810-ce441da2404e.png" width="40%"></p>
 
   - **[Step 2]** **2번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    ![image-20201020112546593](https://user-images.githubusercontent.com/45402031/98187722-ebe06e00-1f54-11eb-8911-3bc2ca30a2ef.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187722-ebe06e00-1f54-11eb-8911-3bc2ca30a2ef.png" width="40%"></p>
 
   - **[Step 3]** **3번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    ![image-20201020112634044](https://user-images.githubusercontent.com/45402031/98187748-fac72080-1f54-11eb-8ba4-014fce4f9815.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187748-fac72080-1f54-11eb-8ba4-014fce4f9815.png" width="40%"></p>
 
   - **[Step 4]** **4번** 노드를 거쳐 가는 경우를 고려하여 테이블을 갱신합니다.
 
-    ![image-20201020112708334](https://user-images.githubusercontent.com/45402031/98187779-0adf0000-1f55-11eb-9765-f74c3e2d3a80.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187779-0adf0000-1f55-11eb-9765-f74c3e2d3a80.png" width="40%"></p>
 
 - [**플로이드 워셜 알고리즘**](Source/플로이드워셜.py)
 
@@ -914,33 +911,33 @@
   - **[초기 단계]** 노드의 개수 크기와 부모 테이블을 초기화합니다.
     - 집합에 자기 자신 밖에 없기 때문에, 부모 노드를 자기 자신으로 초기화
 
-  ![image-20201020120600450](https://user-images.githubusercontent.com/45402031/98187865-3cf06200-1f55-11eb-9d95-31f3fac332fd.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187865-3cf06200-1f55-11eb-9d95-31f3fac332fd.png" width="40%"></p>
 
   - **처리할 연산들**: **Union(1,4)**, Union(2,3), Union(2,4), Union(5,6)
   - **[Step 1]** 노드 1과 노드 4의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 1과 4이므로 더 큰 번호에 해당하는 루트 노드 4의 부모를 1로 설정합니다.
 
-  ![image-20201020120810417](https://user-images.githubusercontent.com/45402031/98187927-5c878a80-1f55-11eb-9fa1-cf68a1871097.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187927-5c878a80-1f55-11eb-9fa1-cf68a1871097.png" width="40%"></p>
 
   - **처리할 연산들**: **Union(1,4), Union(2,3)**, Union(2,4), Union(5,6)
   - **[Step 2]** 노드 2과 노드 3의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 2와 3이므로 더 큰 번호에 해당하는 루트 노드 3의 부모를 2로 설정합니다.
 
-  ![image-20201020121006721](https://user-images.githubusercontent.com/45402031/98187954-71fcb480-1f55-11eb-9bbf-00c146493eca.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187954-71fcb480-1f55-11eb-9bbf-00c146493eca.png" width="40%"></p>
 
   - **처리할 연산들**: **Union(1,4), Union(2,3), Union(2,4)**, Union(5,6)
   - **[Step 3]** 노드 2과 노드 4의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 2와 1이므로 더 큰 번호에 해당하는 루트 노드 2의 부모를 1로 설정합니다.
 
-  ![image-20201020121103327](https://user-images.githubusercontent.com/45402031/98187997-893ba200-1f55-11eb-9ce4-a86b2515a59c.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187997-893ba200-1f55-11eb-9ce4-a86b2515a59c.png" width="40%"></p>
 
   - **처리할 연산들**: **Union(1,4), Union(2,3), Union(2,4), Union(5,6)**
   - **[Step 4]** 노드 5과 노드 6의 루트 노드를 각각 찾습니다. 현재 루트 노드는 각각 5와 6이므로 더 큰 번호에 해당하는 루트 노드 6의 부모를 5로 설정합니다.
 
-  ![image-20201020121220844](https://user-images.githubusercontent.com/45402031/98188100-c1db7b80-1f55-11eb-970d-8f462235a550.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188100-c1db7b80-1f55-11eb-970d-8f462235a550.png" width="40%"></p>
 
 - **서로소 집합 자료구조: 연결성**
 
   - 서로소 집합 자료구조에서는 **연결성**을 통해 손쉽게 집합의 형태를 확인할 수 있습니다.
 
-    ![image-20201020121322716](https://user-images.githubusercontent.com/45402031/98188154-d61f7880-1f55-11eb-878a-7008d0a01cde.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188154-d61f7880-1f55-11eb-878a-7008d0a01cde.png" width="40%"></p>
 
   - 기본적인 형태의 서로소 집합 자료구조에서는 루트 노드에 즉시 접근할 수 없습니다.
 
@@ -958,7 +955,7 @@
 
     - **수행된 연산들**: Union(4,5), Union(3,4), Union(2,3), Union(1,2)
 
-      ![image-20201020133504479](https://user-images.githubusercontent.com/45402031/98188186-e6cfee80-1f55-11eb-873a-a953aea51bda.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188186-e6cfee80-1f55-11eb-873a-a953aea51bda.png" width="40%"></p>
 
 - **서로소 집합 자료구조: 경로 압축**
 
@@ -980,7 +977,7 @@
 
   - 동일한 예시에 대해서 **모든 합집합(Union) 함수를 처리한 후 각 원소에 대하여 찾기(Find) 함수를 수행하면 다음과 같이 부모 테이블이 갱신**됩니다.
 
-    ![image-20201020134000401](https://user-images.githubusercontent.com/45402031/98188226-f94a2800-1f55-11eb-985d-9266b39a36d7.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188226-f94a2800-1f55-11eb-985d-9266b39a36d7.png" width="40%"></p>
 
   - 기본적인 방법에 비하여 시간 복잡도가 개선됩니다.
   
@@ -1007,19 +1004,19 @@
 
   - **[초기 단계]** 모든 노드에 대하여 자기 자신을 부모로 설정하는 형태로 부모 테이블을 초기화합니다.
 
-    ![image-20201020134827740](https://user-images.githubusercontent.com/45402031/98188267-0f57e880-1f56-11eb-866e-102c9a77151c.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188267-0f57e880-1f56-11eb-866e-102c9a77151c.png" width="40%"></p>
 
   - **[Step 1]** 간선 (1,2)를 확인합니다. 노드 1과 노드 2의 루트 노드는 각각 1과 2입니다. 따라서 더 큰 번호에 해당하는 노드 2의 부모 노드를 1로 변경합니다.
 
-    ![image-20201020135132512](https://user-images.githubusercontent.com/45402031/98188302-20a0f500-1f56-11eb-826c-4334b318d91e.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188302-20a0f500-1f56-11eb-826c-4334b318d91e.png" width="40%"></p>
 
   - **[Step 2]** 간선 (1,3)를 확인합니다. 노드 1과 노드 3의 루트 노드는 각각 1과 3입니다. 따라서 더 큰 번호에 해당하는 노드 3의 부모 노드를 1로 변경합니다.
 
-    ![image-20201020135231321](https://user-images.githubusercontent.com/45402031/98188339-31516b00-1f56-11eb-8879-2c6bcb18db5b.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188339-31516b00-1f56-11eb-8879-2c6bcb18db5b.png" width="40%"></p>
 
   - **[Step 3]** 간선 (2,3)를 확인합니다. 이미 노드 2과 노드 3의 루트 노드는 모두 1입니다. 다시 말해 **사이클이 발생**한다는 것을 알 수 있습니다. 
 
-    ![image-20201020135337493](https://user-images.githubusercontent.com/45402031/98188380-4201e100-1f56-11eb-9080-0c4c83bf2da9.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188380-4201e100-1f56-11eb-9080-0c4c83bf2da9.png" width="40%"></p>
 
 - [**서로소 집합을 활용한 사이클 판별**](Source/서로소집합을활용한사이클판별.py)
 
@@ -1030,7 +1027,7 @@
 
   - 모든 노드가 포함되어 서로 연결되면서 사이클이 존재하지 않는다는 조건은 **트리**의 조건이기도 합니다.
 
-  ![image-20201020140243122](https://user-images.githubusercontent.com/45402031/98188428-547c1a80-1f56-11eb-802e-f8bbddfaa3be.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188428-547c1a80-1f56-11eb-802e-f8bbddfaa3be.png" width="40%"></p>
 
 #### 최소 신장 트리
 
@@ -1040,7 +1037,7 @@
 
   - 두 도시 A,B를 선택했을 때 A에서 B로 이동하는 경로가 반드시 존재하도록 도로를 설치합니다.
 
-    ![image-20201020140711650](https://user-images.githubusercontent.com/45402031/98188472-63fb6380-1f56-11eb-96e7-9d5289e2e763.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188472-63fb6380-1f56-11eb-96e7-9d5289e2e763.png" width="40%"></p>
 
 #### 크루스칼 알고리즘
 
@@ -1065,20 +1062,22 @@
   - **[초기 단계]** 그래프의 모든 간선 정보에 대하여 **오름차순 정렬을 수행**합니다.
 
     ![image-20201020202619435](https://user-images.githubusercontent.com/45402031/98188578-97d68900-1f56-11eb-9eb2-bc3af4bd51cd.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188578-97d68900-1f56-11eb-9eb2-bc3af4bd51cd.png" width="40%"></p>
 
     - 최소 신장 트리의 간선의 개수 = 전체 노드의 개수 - 1
 
   - **[Step 1]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (3,4)를 선택하여 처리합니다.
 
     ![image-20201020202822380](https://user-images.githubusercontent.com/45402031/98188607-aa50c280-1f56-11eb-922c-f15bb63ff03f.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188607-aa50c280-1f56-11eb-922c-f15bb63ff03f.png" width="40%"></p>
 
   - **[Step 2]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (4,7)를 선택하여 처리합니다.
 
-    ![image-20201020203026936](https://user-images.githubusercontent.com/45402031/98188638-be94bf80-1f56-11eb-8d12-1702bcc82d19.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188638-be94bf80-1f56-11eb-8d12-1702bcc82d19.png" width="40%"></p>
 
   - **[Step 3]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (4,6)을 선택하여 처리합니다.
 
-    ![image-20201020203124197](https://user-images.githubusercontent.com/45402031/98188664-cbb1ae80-1f56-11eb-8a61-0627ea2c85ad.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188664-cbb1ae80-1f56-11eb-8a61-0627ea2c85ad.png" width="40%"></p>
 
   - **[Step 4]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (6,7)을 선택하여 처리합니다.
 
@@ -1086,11 +1085,11 @@
 
   - **[Step 5]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (1,2)를 선택하여 처리합니다.
 
-    ![image-20201020203314588](https://user-images.githubusercontent.com/45402031/98188695-d79d7080-1f56-11eb-8ca9-aa14ff2ef80d.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188695-d79d7080-1f56-11eb-8ca9-aa14ff2ef80d.png" width="40%"></p>
 
   - **[Step 6]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (2,6)를 선택하여 처리합니다.
 
-    ![image-20201020203615365](https://user-images.githubusercontent.com/45402031/98188715-e6842300-1f56-11eb-91bd-1bb1a76c39eb.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188715-e6842300-1f56-11eb-91bd-1bb1a76c39eb.png" width="40%"></p>
 
   - **[Step 7]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (2,3)를 선택하여 처리합니다.
 
@@ -1098,7 +1097,7 @@
 
   - **[Step 8]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (5,6)를 선택하여 처리합니다.
 
-    ![image-20201020203738534](https://user-images.githubusercontent.com/45402031/98188762-f69c0280-1f56-11eb-93f4-a53149e8767f.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188762-f69c0280-1f56-11eb-93f4-a53149e8767f.png" width="40%"></p>
 
   - **[Step 9]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (1,5)를 선택하여 처리합니다.
 
@@ -1108,7 +1107,7 @@
 
     - 최소 신장 트리에 포함되어 있는 간선의 비용만 모두 더하면, 그 값이 최종 비용에 해당합니다.
 
-    ![image-20201020204152942](https://user-images.githubusercontent.com/45402031/98188786-061b4b80-1f57-11eb-888b-5b8060337b2c.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188786-061b4b80-1f57-11eb-888b-5b8060337b2c.png" width="40%"></p>
 
 - [**크루스칼 알고리즘 (Python)**](Source/크루스칼알고리즘.py)
 
@@ -1129,7 +1128,7 @@
 
   - **진출차수(Outdegree)**: 특정한 노드에서 나가는 간선의 개수
 
-    ![image-20201020204746113](https://user-images.githubusercontent.com/45402031/98188826-17fcee80-1f57-11eb-84a4-6a928ba17f1d.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188826-17fcee80-1f57-11eb-84a4-6a928ba17f1d.png" width="40%"></p>
 
 - **위상 정렬 알고리즘**
 
@@ -1155,13 +1154,13 @@
 
     - 처음에 노드 1이 큐에 삽입됩니다.
 
-    ![image-20201020205238222](https://user-images.githubusercontent.com/45402031/98188867-2ba85500-1f57-11eb-90e2-364502b3d3cc.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188867-2ba85500-1f57-11eb-90e2-364502b3d3cc.png" width="40%"></p>
 
   - **[Step 1]** 큐에서 **노드 1**을 꺼낸 뒤에 **노드 1**에서 나가는 간선을 제거합니다.
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    ![image-20201020205357540](https://user-images.githubusercontent.com/45402031/98188891-37941700-1f57-11eb-88e5-de5ce9db0152.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188891-37941700-1f57-11eb-88e5-de5ce9db0152.png" width="40%"></p>
 
     - 여러개의 노드가 한번에 큐에 들어갈 때는 어떤 순서든지 상관 없지만, 일반적으로 노드 번호가 낮은 번호가 우선적으로 들어간다.
 
@@ -1169,13 +1168,13 @@
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    ![image-20201020205538238](https://user-images.githubusercontent.com/45402031/98188922-45e23300-1f57-11eb-916b-38bf6c5c5a77.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188922-45e23300-1f57-11eb-916b-38bf6c5c5a77.png" width="40%"></p>
 
   - **[Step 3]** 큐에서 **노드 5**을 꺼낸 뒤에 **노드 5**에서 나가는 간선을 제거합니다.
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    ![image-20201020205640279](https://user-images.githubusercontent.com/45402031/98188950-55fa1280-1f57-11eb-9811-d5c4f99f5aa2.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188950-55fa1280-1f57-11eb-9811-d5c4f99f5aa2.png" width="40%"></p>
 
   - **[Step 4]** 큐에서 **노드 3**을 꺼낸 뒤에 **노드 3**에서 나가는 간선을 제거합니다.
 
@@ -1185,13 +1184,13 @@
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    ![image-20201020205751491](https://user-images.githubusercontent.com/45402031/98188980-63af9800-1f57-11eb-9bf5-d2c6fc030e99.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188980-63af9800-1f57-11eb-9bf5-d2c6fc030e99.png" width="40%"></p>
 
   - **[Step 6]** 큐에서 **노드 4**을 꺼낸 뒤에 **노드 4**에서 나가는 간선을 제거합니다.
 
     - 새롭게 **진입차수가 0이 된 노드**들을 큐에 삽입합니다.
 
-    ![image-20201020205823926](https://user-images.githubusercontent.com/45402031/98189015-732ee100-1f57-11eb-8142-ef7d6bf4cf93.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189015-732ee100-1f57-11eb-8142-ef7d6bf4cf93.png" width="40%"></p>
 
   - **[Step 7]** 큐에서 **노드 7**을 꺼낸 뒤에 **노드 7**에서 나가는 간선을 제거합니다.
     
@@ -1295,7 +1294,7 @@
   - **합이 M인 부분 연속 수열의 개수**를 구해보세요.
   - 수행 시간 제한은 **O(N)**입니다.
 
-  ![image-20201021121903639](https://user-images.githubusercontent.com/45402031/98189067-8a6dce80-1f57-11eb-9ed6-5b79c29db1aa.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189067-8a6dce80-1f57-11eb-9ed6-5b79c29db1aa.png" width="40%"></p>
 
 -  **특정한 합을 가지는 부분 연속 수열 찾기: 문제 해결 아이디어**
 
@@ -1307,7 +1306,7 @@
     4. 현재 부분 합이 M보다 크거나 같다면, start를 1 증가시킨다.
     5. 모든 경우를 확인할 때까지 2번부터 4번까지의 과정을 반복한다.
 
-    ![image-20201021122512703](https://user-images.githubusercontent.com/45402031/98189097-99ed1780-1f57-11eb-8149-43f5f7b59211.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189097-99ed1780-1f57-11eb-8149-43f5f7b59211.png" width="40%"></p>
 
   - **M = 5**
 
@@ -1316,63 +1315,62 @@
     - 현재의 부분합은 1이므로 무시합니다.
     - 현재 카운트: 0
 
-    ![image-20201021122641113](https://user-images.githubusercontent.com/45402031/98189125-a7a29d00-1f57-11eb-8523-2d83c0f78660.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189125-a7a29d00-1f57-11eb-8523-2d83c0f78660.png" width="40%"></p>
 
   - **[Step 1]** 이전 단계에서의 부분합이 1이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 3이므로 무시합니다.
     - 현재 카운트: 0
 
-    ![image-20201021122801810](https://user-images.githubusercontent.com/45402031/98189155-b5582280-1f57-11eb-9af6-8f3732462a21.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189155-b5582280-1f57-11eb-9af6-8f3732462a21.png" width="40%"></p>
 
   - **[Step 2]** 이전 단계에서의 부분합이 3이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 6이므로 무시합니다.
     - 현재 카운트: 0
 
-    ![image-20201021122850453](https://user-images.githubusercontent.com/45402031/98189185-c2751180-1f57-11eb-988f-51ad2d77e726.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189185-c2751180-1f57-11eb-988f-51ad2d77e726.png" width="40%"></p>
 
   - **[Step 3]** 이전 단계에서의 부분합이 6이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 5이므로 무시합니다.
     - 현재 카운트: 1
 
-    ![image-20201021122952072](https://user-images.githubusercontent.com/45402031/98189207-d02a9700-1f57-11eb-8611-5555397872c7.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189207-d02a9700-1f57-11eb-8611-5555397872c7.png" width="40%"></p>
 
   - **[Step 4]** 이전 단계에서의 부분합이 5이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 3이므로 무시합니다.
     - 현재 카운트: 1
 
-    ![image-20201021123018405](https://user-images.githubusercontent.com/45402031/98189229-de78b300-1f57-11eb-9147-50e367ccfeb4.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189229-de78b300-1f57-11eb-9147-50e367ccfeb4.png" width="40%"></p>
 
   - **[Step 5]** 이전 단계에서의 부분합이 3이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 5이므로 카운트를 증가시킵니다.
     - 현재 카운트: 2
 
-    ![image-20201021123114262](https://user-images.githubusercontent.com/45402031/98189264-f0f2ec80-1f57-11eb-8f1d-2a146d0ed660.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189264-f0f2ec80-1f57-11eb-8f1d-2a146d0ed660.png" width="40%"></p>
 
   - **[Step 6]** 이전 단계에서의 부분합이 5이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 2이므로 무시합니다.
     - 현재 카운트: 2
-
-    ![image-20201021123356751](https://user-images.githubusercontent.com/45402031/98189286-ff410880-1f57-11eb-8803-7e4d148d5880.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189286-ff410880-1f57-11eb-8803-7e4d148d5880.png" width="40%"></p>
 
   - **[Step 7]** 이전 단계에서의 부분합이 2이었기 때문에 end를 1 증가시킵니다.
 
     - 현재의 부분합은 7이므로 무시합니다.
     - 현재 카운트: 2
 
-    ![image-20201021123446253](https://user-images.githubusercontent.com/45402031/98189321-108a1500-1f58-11eb-9bab-4735b8d00fc7.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189321-108a1500-1f58-11eb-9bab-4735b8d00fc7.png" width="40%"></p>
 
   - **[Step 8]** 이전 단계에서의 부분합이 7이었기 때문에 start를 1 증가시킵니다.
 
     - 현재의 부분합은 5이므로 카운트를 증가시킵니다.
     - 현재 카운트: 3
 
-    ![image-20201021123554464](https://user-images.githubusercontent.com/45402031/98189344-213a8b00-1f58-11eb-8f79-9d72bdf7e391.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189344-213a8b00-1f58-11eb-8f79-9d72bdf7e391.png" width="40%"></p>
 
 - [**특정한 합을 가지는 부분 연속 수열 찾기: 코드 예시 (Python)**](Source/특정한합을가지는부분연속수열찾기.py)
 
@@ -1452,29 +1450,29 @@
 
 - **완전 이진 트리**란 루트(root) 노드부터 시작하여 왼쪽 자식 노드, 오른쪽 자식 노드 순서대로 데이터가 차례대로 삽입되는 트리(tree)를 의미합니다.
 
-![image-20201122141846924](https://user-images.githubusercontent.com/45402031/100815984-7fd82380-3488-11eb-8679-f6129575958b.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100815984-7fd82380-3488-11eb-8679-f6129575958b.png" width="40%"></p>
 
 #### 최소 힙 구성 함수: Min-Heapify
 
 - (상향식) 부모 노드로 거슬러 올라가며, 부모보다 자신의 값이 더 작은 경우에 위치를 교체합니다.
 
-![image-20201122142011503](https://user-images.githubusercontent.com/45402031/100816043-9ed6b580-3488-11eb-89f6-b4a9d7808a3c.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816043-9ed6b580-3488-11eb-89f6-b4a9d7808a3c.pngg" width="40%"></p>
 
 #### 힙에 새로운 원소가 삽입/제거될 때
 
 - 새로운 원소가 삽입되었을 때 **O(logN)**의 시간 복잡도로 힙 성질을 유지하도록 할 수 있습니다.
 
-  ![image-20201122142144384](https://user-images.githubusercontent.com/45402031/100816071-adbd6800-3488-11eb-94a9-e558014ea1f1.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816071-adbd6800-3488-11eb-94a9-e558014ea1f1.png" width="40%"></p>
 
 - 원소가 제거되었을 때 **O(logN)**의 시간 복잡도로 힙 성질을 유지하도록 할 수 있습니다.
 
   - 원소를 제거할 때는 가장 마지막 노드가 루트 노드의 위치에 오도록 합니다.
 
-  ![image-20201122142559126](https://user-images.githubusercontent.com/45402031/100816107-be6dde00-3488-11eb-8e6e-29d042fac996.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816107-be6dde00-3488-11eb-8e6e-29d042fac996.png" width="40%"></p>
 
   - 이후에 루트 노드에서부터 하향식으로(더 작은 자식 노드로) Heapify()를 진행합니다.
 
-  ![image-20201122142559126](https://user-images.githubusercontent.com/45402031/100816135-caf23680-3488-11eb-8376-3070f07d7f5b.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816135-caf23680-3488-11eb-8376-3070f07d7f5b.png" width="40%"></p>
 
 
 
@@ -1506,11 +1504,11 @@
   - 찾고자 하는 값 > 현재 노드: 오른쪽 노드 방문
   - 찾고자 하는 값 < 현재 노드: 왼쪽 노드 방문
 
-![image-20201129184842562](https://user-images.githubusercontent.com/45402031/100816163-d9405280-3488-11eb-9457-d0b1546bd1d1.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816163-d9405280-3488-11eb-9457-d0b1546bd1d1.png" width="40%"></p>
 
-![image-20201129184927680](https://user-images.githubusercontent.com/45402031/100816195-ecebb900-3488-11eb-8750-8bb066d7b431.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816195-ecebb900-3488-11eb-8750-8bb066d7b431.png" width="40%"></p>
 
-![image-20201129184954040](https://user-images.githubusercontent.com/45402031/100816211-f70db780-3488-11eb-8dd2-c425c0a756a8.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816211-f70db780-3488-11eb-8dd2-c425c0a756a8.png" width="40%"></p>
 
 #### 트리의 순회(Tree Traversal)
 
@@ -1526,7 +1524,7 @@
 
   - **후위 순회(post-order traverse)**: 오른쪽 자식을 방문한 뒤 루트를 방문합니다
 
-    ![image-20201129185421779](https://user-images.githubusercontent.com/45402031/100816249-0856c400-3489-11eb-836f-4446006b2667.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816249-0856c400-3489-11eb-836f-4446006b2667.png" width="40%"></p>
 
 - [**트리의 순회(Tree Traversal) 구현 예제**](Source/트리의순회.py)
 
@@ -1595,7 +1593,7 @@
     - 양수: 8bit x 4의 이진수로 표현
     - 음수: 양수에 보수를 취해서 + 1
 
-  ![image-20201130130524597](https://user-images.githubusercontent.com/45402031/100816274-186ea380-3489-11eb-9497-871598493fa4.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816274-186ea380-3489-11eb-9497-871598493fa4.pngg" width="40%"></p>
 
 - **0이 아닌 마지막 비트를 찾는 법**
 
@@ -1603,7 +1601,7 @@
 
   - K & -K 계산 결과 예시
 
-    ![image-20201130130815634](https://user-images.githubusercontent.com/45402031/100816310-29b7b000-3489-11eb-84cf-a05b18178322.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816310-29b7b000-3489-11eb-84cf-a05b18178322.png" width="40%"></p>
 
   ```python
   n = 8
@@ -1619,14 +1617,14 @@
   - L[i]: 마지막 1이 나타내는 값 = i & -i
   -  Tree[i]:  A[i]부터 L[i]개의 합이 저장
 
-![image-20201130134824775](https://user-images.githubusercontent.com/45402031/100816355-3d631680-3489-11eb-9535-a35726cfa1b1.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816355-3d631680-3489-11eb-9535-a35726cfa1b1.png" width="40%"></p>
 
 
 - **특정 값을 변경할 때: 0이 아닌 마지막 비트만큼 더하면서 구간들의 값을 변경 (예시 = 3rd)**
   - i를 변경했을 때 바꿔줘야하는 Tree[i]를 나타낸 그림
   - 마지막 1의 값을 더하는 방식으로 구현
 
-![image-20201130135023071](https://user-images.githubusercontent.com/45402031/100816379-4a800580-3489-11eb-9828-c9e8f7efa282.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816379-4a800580-3489-11eb-9828-c9e8f7efa282.png" width="40%"></p>
 
 #### 바이너리 인덱스 트리: 누적 합(Prefix Sum)
 
@@ -1635,6 +1633,6 @@
   - 모든 i에 대해서, A[1] + ... + A[i]를 구하는 과정을 나타낸 그림
     - 마지막 1의 위치를 빼면서 찾을 수 있음
     
-![image-20201130135434201](https://user-images.githubusercontent.com/45402031/100816442-64b9e380-3489-11eb-9fbc-747e6c8e693f.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816442-64b9e380-3489-11eb-9fbc-747e6c8e693f.png" width="40%"></p>
 
 - [**바이너리 인덱스 트리 구현: 파이썬(Python)**](Source/바이너리인덱스트리.py)
