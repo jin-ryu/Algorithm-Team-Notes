@@ -303,7 +303,7 @@
     ```
     
   - **List vs. Dictionary**
-    ![리스트와 딕셔너리 비교](https://user-images.githubusercontent.com/45402031/88435926-2f97e780-ce3e-11ea-8e1d-8d6ce975b1e0.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/88435926-2f97e780-ce3e-11ea-8e1d-8d6ce975b1e0.png" width="50%"></p>
   
   
 
