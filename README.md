@@ -1452,29 +1452,29 @@
 
 - **완전 이진 트리**란 루트(root) 노드부터 시작하여 왼쪽 자식 노드, 오른쪽 자식 노드 순서대로 데이터가 차례대로 삽입되는 트리(tree)를 의미합니다.
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201122141846924.png" alt="image-20201122141846924" style="zoom:50%;" />
+![image-20201122141846924](https://user-images.githubusercontent.com/45402031/100815984-7fd82380-3488-11eb-8679-f6129575958b.png)
 
 #### 최소 힙 구성 함수: Min-Heapify
 
 - (상향식) 부모 노드로 거슬러 올라가며, 부모보다 자신의 값이 더 작은 경우에 위치를 교체합니다.
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201122142011503.png" alt="image-20201122142011503" style="zoom:50%;" />
+![image-20201122142011503](https://user-images.githubusercontent.com/45402031/100816043-9ed6b580-3488-11eb-89f6-b4a9d7808a3c.png)
 
 #### 힙에 새로운 원소가 삽입/제거될 때
 
 - 새로운 원소가 삽입되었을 때 **O(logN)**의 시간 복잡도로 힙 성질을 유지하도록 할 수 있습니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201122142144384.png" alt="image-20201122142144384" style="zoom:50%;" />
+  ![image-20201122142144384](https://user-images.githubusercontent.com/45402031/100816071-adbd6800-3488-11eb-94a9-e558014ea1f1.png)
 
 - 원소가 제거되었을 때 **O(logN)**의 시간 복잡도로 힙 성질을 유지하도록 할 수 있습니다.
 
   - 원소를 제거할 때는 가장 마지막 노드가 루트 노드의 위치에 오도록 합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201122142251972.png" alt="image-20201122142251972" style="zoom:50%;" />
+  ![image-20201122142559126](https://user-images.githubusercontent.com/45402031/100816107-be6dde00-3488-11eb-8e6e-29d042fac996.png)
 
   - 이후에 루트 노드에서부터 하향식으로(더 작은 자식 노드로) Heapify()를 진행합니다.
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201122142559126.png" alt="image-20201122142559126" style="zoom:50%;" />
+  ![image-20201122142559126](https://user-images.githubusercontent.com/45402031/100816135-caf23680-3488-11eb-8376-3070f07d7f5b.png)
 
 
 
@@ -1506,11 +1506,11 @@
   - 찾고자 하는 값 > 현재 노드: 오른쪽 노드 방문
   - 찾고자 하는 값 < 현재 노드: 왼쪽 노드 방문
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201129184842562.png" alt="image-20201129184842562" style="zoom: 67%;" />
+![image-20201129184842562](https://user-images.githubusercontent.com/45402031/100816163-d9405280-3488-11eb-9457-d0b1546bd1d1.png)
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201129184927680.png" alt="image-20201129184927680" style="zoom:67%;" />
+![image-20201129184927680](https://user-images.githubusercontent.com/45402031/100816195-ecebb900-3488-11eb-8750-8bb066d7b431.png)
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201129184954040.png" alt="image-20201129184954040" style="zoom:67%;" />
+![image-20201129184954040](https://user-images.githubusercontent.com/45402031/100816211-f70db780-3488-11eb-8dd2-c425c0a756a8.png)
 
 #### 트리의 순회(Tree Traversal)
 
@@ -1526,7 +1526,7 @@
 
   - **후위 순회(post-order traverse)**: 오른쪽 자식을 방문한 뒤 루트를 방문합니다
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201129185421779.png" alt="image-20201129185421779" style="zoom:67%;" />
+    ![image-20201129185421779](https://user-images.githubusercontent.com/45402031/100816249-0856c400-3489-11eb-836f-4446006b2667.png)
 
 - 트리의 순회(Tree Traversal) 구현 예제
 
@@ -1595,7 +1595,7 @@
     - 양수: 8bit x 4의 이진수로 표현
     - 음수: 양수에 보수를 취해서 + 1
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201130130524597.png" alt="image-20201130130524597" style="zoom:67%;" />
+  ![image-20201130130524597](https://user-images.githubusercontent.com/45402031/100816274-186ea380-3489-11eb-9497-871598493fa4.png)
 
 - **0이 아닌 마지막 비트를 찾는 법**
 
@@ -1603,7 +1603,7 @@
 
   - K & -K 계산 결과 예시
 
-    <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201130130815634.png" alt="image-20201130130815634" style="zoom:67%;" />
+    ![image-20201130130815634](https://user-images.githubusercontent.com/45402031/100816310-29b7b000-3489-11eb-84cf-a05b18178322.png)
 
   ```python
   n = 8
@@ -1619,15 +1619,14 @@
   - L[i]: 마지막 1이 나타내는 값 = i & -i
   -  Tree[i]:  A[i]부터 L[i]개의 합이 저장
 
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201130134824775.png" alt="image-20201130134824775" style="zoom:67%;" />
-
+![image-20201130134824775](https://user-images.githubusercontent.com/45402031/100816355-3d631680-3489-11eb-9535-a35726cfa1b1.png)
 
 
 - **특정 값을 변경할 때: 0이 아닌 마지막 비트만큼 더하면서 구간들의 값을 변경 (예시 = 3rd)**
   - i를 변경했을 때 바꿔줘야하는 Tree[i]를 나타낸 그림
   - 마지막 1의 값을 더하는 방식으로 구현
 
-<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201130135023071.png" alt="image-20201130135023071" style="zoom:67%;" />
+![image-20201130135023071](https://user-images.githubusercontent.com/45402031/100816379-4a800580-3489-11eb-9828-c9e8f7efa282.png)
 
 #### 바이너리 인덱스 트리: 누적 합(Prefix Sum)
 
@@ -1635,7 +1634,7 @@
 
   - 모든 i에 대해서, A[1] + ... + A[i]를 구하는 과정을 나타낸 그림
     - 마지막 1의 위치를 빼면서 찾을 수 있음
-
-  <img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201130135434201.png" alt="image-20201130135434201" style="zoom:67%;" />
+    
+![image-20201130135434201](https://user-images.githubusercontent.com/45402031/100816442-64b9e380-3489-11eb-9fbc-747e6c8e693f.png)
 
 - 바이너리 인덱스 트리 구현: 파이썬(Python)
