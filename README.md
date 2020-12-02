@@ -1061,7 +1061,6 @@
 
   - **[초기 단계]** 그래프의 모든 간선 정보에 대하여 **오름차순 정렬을 수행**합니다.
 
-    ![image-20201020202619435](https://user-images.githubusercontent.com/45402031/98188578-97d68900-1f56-11eb-9eb2-bc3af4bd51cd.png)
     <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188578-97d68900-1f56-11eb-9eb2-bc3af4bd51cd.png" width="40%"></p>
 
     - 최소 신장 트리의 간선의 개수 = 전체 노드의 개수 - 1
@@ -1395,7 +1394,7 @@
     - N개의 수 위치 각각에 대하여 접두사 합을 계산하여 P에 저장합니다.
     - 매 M개의 쿼리 정보를 확일할 때 구간 합은 P[Right] - P[Left-1]입니다.
 
-  ![image-20201021124627354](https://user-images.githubusercontent.com/45402031/98189364-2c8db680-1f58-11eb-9d05-15cdb7252622.png)
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98189364-2c8db680-1f58-11eb-9d05-15cdb7252622.png" width="40%"></p>
 
 - [**구간 합 빠르게 계산하기: 코드 예시 (Python)**](Source/구간합빠르게계산하기.py)
 
