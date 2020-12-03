@@ -45,8 +45,8 @@
   - [우선순위 큐와 힙](#우선순위-큐와-힙)
   - [트리](#트리)
   - [벨만 포드 알고리즘](#벨만-포드-알고리즘)
-  - 바이너리 인덱스 트리(Binary Indexed Tree, BIT, 펜윅 트리)
-  - 최소 공통 조상(Lowest Common Ancestor, LCA)
+  - [바이너리 인덱스 트리(Binary Indexed Tree, BIT, 펜윅 트리)](#바이너리-인덱스-트리)
+  - [최소 공통 조상(Lowest Common Ancestor, LCA)](#최소-공통-조상)
 
 
 
@@ -621,7 +621,7 @@
 - **피보나치 수열: 메모이제이션 동작 분석**
   - 이미 계산된 결과를 메모리에 저장하면 다음과 같이 색칠된 노드만 처리할 것을 기대할 수 있습니다.
 <p align="center"><img src="https://user-images.githubusercontent.com/45402031/97035809-d9078a00-15a1-11eb-8b50-7a34c22485da.png" width="40%"></p>    
-    
+
   -  메모이제이션을 이용하는 경우 피보나치 수열 함수의 시간 복잡도는 **O(N)**입니다.
 
 #### 다이나믹 프로그래밍 VS 분할 정복
@@ -798,11 +798,13 @@
     <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187488-6492fa80-1f54-11eb-8a69-6ecada9eab23.png" width="40%"></p>
 
   - **[Step 4]** 우선순위 큐에서 원소를 꺼냅니다. **5번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
-    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png" width="40%"></p>
-
+    
+<p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187353-10881600-1f54-11eb-9a25-a84bea9ed30e.png" width="40%"></p>
+    
   - **[Step 5]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
-    <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187587-9e640100-1f54-11eb-8233-ac4c9f3e1713.png" width="40%"></p>
-
+  
+  <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187587-9e640100-1f54-11eb-8233-ac4c9f3e1713.png" width="40%"></p>
+  
   - **[Step 6]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
 
     - 별도로 방문 여부를 기록하는 하나의 테이블을 사용하지 않고, 단순히 최단 거리 테이블과 비교해서 <u>현재 거리 값보다 크면</u> 해당 노드를 무시하게 구현
@@ -810,7 +812,7 @@
   - **[Step 7]** 우선순위 큐에서 원소를 꺼냅니다. **6번** 노드는 아직 방문하지 않았으므로 이를 처리합니다.
 
     <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98187611-b045a400-1f54-11eb-8e66-40fd0bb6e235.png" width="40%"></p>
-
+  
   - **[Step 8]** 우선순위 큐에서 원소를 꺼냅니다. **3번** 노드는 이미 방문했으므로 무시합니다.
   
 - [**다익스트라 알고리즘: 개선된 구현 방법 (Python)**](Source/다익스트라(개선된구현).py)
@@ -1068,6 +1070,7 @@
   - **[Step 1]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (3,4)를 선택하여 처리합니다.
 
     ![image-20201020202822380](https://user-images.githubusercontent.com/45402031/98188607-aa50c280-1f56-11eb-922c-f15bb63ff03f.png)
+
     <p align="center"><img src="https://user-images.githubusercontent.com/45402031/98188607-aa50c280-1f56-11eb-922c-f15bb63ff03f.png" width="40%"></p>
 
   - **[Step 2]** 아직 처리하지 않은 간선 중에서 가장 짧은 간선인 (4,7)를 선택하여 처리합니다.
@@ -1574,6 +1577,8 @@
   - <u>매번 모든 간선을 전부 확인</u>합니다
     - 따라서 **다익스트라 알고리즘에서의 최적의 해를 항상 포함**합니다
   - 다익스트라 알고리즘에 비해 시간이 오래 걸리지만 음수 간선 순환을 탐지할 수 있습니다
+  
+  
 
 ### 바이너리 인덱스 트리
 
@@ -1635,3 +1640,71 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/45402031/100816442-64b9e380-3489-11eb-9fbc-747e6c8e693f.png" width="40%"></p>
 
 - [**바이너리 인덱스 트리 구현: 파이썬(Python)**](Source/바이너리인덱스트리.py)
+
+
+
+### 최소 공통 조상
+
+#### 최소 공통 조상(Lowest Common Ancestor)
+
+- BOJ 'LCA'문제: https://www.acmicpc.net/problem/11437
+- 최소 공통 조상(LCA) 문제는 두 노드의 공통된 조상 중에서 가장 가까운 조상을 찾는 문제
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201202124220392.png" alt="image-20201202124220392" style="zoom:67%;" />
+
+#### 기본적인 최소 공통 조상 (LCA) 알고리즘
+
+- **최소 공통 조상** 찾기 알고리즘
+  1. 모든 노드에 대한 깊이(depth)를 계산합니다
+  2. 최소 공통 조상을 찾을 두 노드를 확인합니다
+     1. 먼저 두 노드의 깊이(depth)가 동일하도록 거슬러 올라갑니다
+     2. 이후에 부모가 같아질 때까지 반복적으로 두 노드의 부모 방향으로 거슬러 올라갑니다
+  3. 모든 LCA(a, b) 연산에 대하여 2번의 과정을 반복합니다
+
+#### 기본적인 최소 공통 조상 (LCA) 알고리즘: 연산과정 살펴보기
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201202125229052.png" alt="image-20201202125229052" style="zoom: 67%;" />![image-20201202125250537](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201202125250537.png)
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201202125328565.png" alt="image-20201202125328565" style="zoom:67%;" />
+
+- 기본적인 최소 공통 조상(LCA) 알고리즘: 파이썬(Python)
+
+#### 기본적인 최소 공통 조상 (LCA) 알고리즘: 시간 복잡도 분석
+
+- 매 쿼리마다 부모 방향으로 거슬러 올라가기 위해 최악의 경우 **O(N**)의 시간 복잡도가 요구됩니다
+  - 따라서 모든 쿼리를 처리할 때의 시간 복잡도는 **O(NM)**입니다
+
+#### 최소 공통 조상(LCA) 알고리즘 개선하기
+
+- BOJ 'LCA 2' 문제: https://www.acmicpc.net/problem/11438
+
+- 최소 공통 조상(LCA) 알고리즘 개선하기
+  - 각 노드가 <u>거슬러 올라가는 속도를 빠르게 만드는 방법</u>에 대해  고민해 봅시다
+    - 만약 총 15칸을 거슬러 올라가야 한다면?
+      -  8칸 → 4칸 → 2칸 → 1칸
+  - 2의 제곱 형태로 거슬러 올라가도록 하면 O(logN)의 시간 복잡도를 보장할 수 있습니다
+  - 메모리를 조금 더 사용하여 각 노드에 대하여 2<sup>i</sup>번째 부모에 대한 정보를 기록합니다
+
+#### 개선된 최소 공통 조상 (LCA) 알고리즘: 모든 노드의 깊이와 부모 구하기
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201202130232782.png" alt="image-20201202130232782" style="zoom:67%;" />
+
+#### 개선된 최소 공통 조상 (LCA) 알고리즘: 연산 과정 살펴보기
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201202130344542.png" style="zoom:67%;" />
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201203173040217.png" alt="image-20201203173040217" style="zoom:67%;" />![image-20201203173058979](C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201203173058979.png)
+
+
+
+<img src="C:\Users\ann\AppData\Roaming\Typora\typora-user-images\image-20201203173152633.png" alt="image-20201203173152633" style="zoom:67%;" />
+
+#### 개선된 최소 공통 조상 (LCA) 알고리즘: 시간 복잡도 분석
+
+- 다이나믹 프로그래밍(dynamic programming)을 이용해 시간 복잡도를 개선할 수 있습니다.
+  - 세그먼트 트리를 이용하는 방법도 존재합니다
+- 매 쿼리마다 부모를 거슬러 올라가기 위해 **O(logN)**의 복잡도가 필요합니다
+  - 따라서 모든 쿼리를 처리할 때의 시간 복잡도 **O(MlogN)**입니다
+
+- 개선된 공통 조상 (LCA) 알고리즘: 파이썬 (Python)
+
