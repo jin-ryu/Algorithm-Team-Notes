@@ -136,6 +136,13 @@
 
   - `ch.islower()`: 문자가 소문자인지 확인
 
+- **Sort and Reverse**
+
+  - `list.sort()`나 `list.reverese()`는 리스트라는 자료형에 한정된 메소드
+    - 따라서 다른 자료형에서는 안될 수도 있다
+  - `sorted()`나 `reversed()`는 괄호 안에 다양한 자료형을 지원한다
+    - 따라서 자료형이 헷갈릴 경우는 이것을 사용하는 것이 좋을 것 같다
+
 - **List and String**
 
   - 서로 변환이 가능하다
