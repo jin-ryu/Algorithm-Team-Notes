@@ -194,6 +194,9 @@
   - `s.lower()`: 대문자를 소문자로 변환
   - `s.upper()`: 소문자를 대문자로 변환
   - `s.capitalize()`:  문자열의 첫 문자를 대문자로 변환
+  - `strip(str)` : 인자로 전달된 문자를 String의 왼쪽과 오른쪽에서 제거
+  - `lstrip(str)` : 인자로 전달된 문자를 String의 왼쪽에서 제거
+  - `rstrip(str)` : 인자로 전달된 문자를 String의 오른쪽에서 제거
   
   
 
