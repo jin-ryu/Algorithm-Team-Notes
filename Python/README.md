@@ -183,6 +183,7 @@
   - `end` : print() 함수에서 출력의 끝을 지정
     - `print('Python Introduction' , end='')`
   - `str.find(sub)`: str안에 sub가 서브스트링에서 존재하면 sub의 시작 위치를 반환, sub가 없다면 -1을 리턴 
+  - `str.rfind(sub)`: 오른쪽에서 부터 탐색. str안에 sub가 서브스트링에서 존재하면 sub의 시작 위치를 반환, sub가 없다면 -1을 리턴 
   - `str1.startswith(str2)` : str2가 str1의 맨 앞에 있는지 여부를 True, False로 반환
   - `str1.endsswith(str2)` : str2가 str1의 맨 앞에 있는지 여부를 True, False로 반환
   - `ord(ch)`: 문자의 ASCII 코드를 리턴
