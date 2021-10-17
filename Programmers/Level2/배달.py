@@ -1,7 +1,6 @@
 import heapq
 
 def solution(N, road, K):
-    answer = 0
     graph = {}
     distance = [500001 for _ in range(N+1)]   # 최단 거리 테이블
     q = []  # 방문할 노드
@@ -34,11 +33,8 @@ def solution(N, road, K):
             if distance[i[0]] > cost:
                 distance[i[0]] = cost
                 heapq.heappush(q, (cost, i[0]))
-                
-    print(distance)
-    print(len(list(filter(lambda x : x <= K, distance))))
-        
+                   
     
-    return answer
+    return len(list(filter(lambda x : x <= K, distance)))
 
 print(solution(5, [[1,2,1],[2,3,3],[5,2,2],[1,4,2],[5,3,1],[5,4,2]], 3))
